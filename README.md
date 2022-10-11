@@ -1,1 +1,1 @@
-# trybe-exercices
+Use to send the projects and activities
