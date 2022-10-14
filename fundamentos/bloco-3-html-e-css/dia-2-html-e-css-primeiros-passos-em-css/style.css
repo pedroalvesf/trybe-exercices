@@ -1,1 +1,22 @@
-css adicionado para servir como style do dia 2 de html e css
+body{
+    font-size: 16px;
+    text-align: center;
+}
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+ul {
+    background-color: blue;
+}
+p {
+    font-size: 3em;
+}
+
+.text{
+    background-color: blueviolet;
+
+}
