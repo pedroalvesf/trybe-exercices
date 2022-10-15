@@ -7,11 +7,6 @@
 
 </details>
 
-<details>
-  <summary><strong>:memo: </strong></summary><br />
-
-
-</details>
 
 <details>
 
