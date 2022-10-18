@@ -26,6 +26,7 @@ body{
 .container-article{
     color:azure;
     text-align: center;
+    border: solid 1px white;
 
 }
 
@@ -33,18 +34,33 @@ body{
     display: inline-block;
     background-color: hsla(50, 33%, 25%, .65);
     color: white;
-    width: 30%;
-    margin-top: 10px;
+    width: 45%;
+
 
 }
-.container-section{
-    border: solid 1px white;
+.container-section-2{
     display: inline-block;
-    width: 50%;
-
+    background-color: hsla(50, 33%, 25%, .65);
+    color: white;
+    width: 49%;
 }
 .container-table{
-    width: 30%;
+    width: 100%;
     background-color: aliceblue;
     color: black;
 }
+
+.container-section-3{
+    display: inline-block;
+    background-color: hsla(50, 33%, 25%, .65);
+    color: white;
+    width: 49%;
+}
+
+.container-section-4{
+    display: inline-block;
+    background-color: hsla(50, 33%, 25%, .65);
+    color: white;
+    width: 50%;
+}
+
