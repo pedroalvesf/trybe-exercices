@@ -1,0 +1,19 @@
+.container-header{
+    text-align: center;
+    background-color: brown;
+}
+
+.header-list{
+    display: inline-block;
+    margin: 1%;
+}
+
+.header-list a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.container-article{
+    padding-left: 10px;
+}
