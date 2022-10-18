@@ -64,7 +64,6 @@ body{
 
 }
 
-
 .container-section-3{
     background-color: hsla(50, 33%, 25%, .65);
     color: white;
@@ -101,6 +100,15 @@ body{
     text-align: left;
 }
 
+
+.container-bibliografias{
+    background-color: hsla(50, 33%, 25%, .65);
+    color: white;
+}
+
+.container-bibliografias a{
+    text-decoration: none;
+}
 .footer{
     background-color: brown;
     color: aliceblue;
