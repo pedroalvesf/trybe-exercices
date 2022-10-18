@@ -4,6 +4,7 @@ body{
     background-image: url("stomatopoda-image-background.jpg");
     background-attachment: fixed;
     background-size: 100% 100%;
+    background-blend-mode:lighten;
 }
 
 .container-header{
@@ -24,14 +25,24 @@ body{
 }
 
 .container-article{
-    padding-left: 10px;
-    color: bisque;
-}
-
-.container-article h2{
+    color:azure;
     text-align: center;
 
-    padding-right: 6%;
+}
+
+.container-section-1{
+    display: inline-block;
+    background-color: hsla(50, 33%, 25%, .65);
+    color: white;
+    width: 30%;
+    margin-top: 10px;
+
+}
+.container-section{
+    border: solid 1px white;
+    display: inline-block;
+    width: 50%;
+
 }
 .container-table{
     width: 30%;
