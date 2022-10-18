@@ -104,6 +104,17 @@ body{
 .container-bibliografias{
     background-color: hsla(50, 33%, 25%, .65);
     color: white;
+    text-align: center;
+}
+.container-bibliografias li{
+    display: inline-block;
+    margin: 30px;
+
+}
+.container-bibliografias ul{
+    text-decoration: none;
+
+
 }
 
 .container-bibliografias a{
