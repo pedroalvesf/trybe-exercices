@@ -38,6 +38,15 @@ body{
 
 
 }
+.container-section-2 img{
+    width: 200px;
+    display: inline-block;
+}
+
+.container-section-2 p{
+    display: inline-block;
+    width: 200px;
+}
 .container-section-2{
     display: inline-block;
     background-color: hsla(50, 33%, 25%, .65);
