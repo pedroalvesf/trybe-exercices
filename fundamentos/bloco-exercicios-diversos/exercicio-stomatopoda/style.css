@@ -51,16 +51,42 @@ body{
 }
 
 .container-section-3{
-    display: inline-block;
     background-color: hsla(50, 33%, 25%, .65);
     color: white;
+
+}
+.container-section-3 img{
+    width: 400px;
+    display: inline-block;
+}
+
+.container-section-3 p{
     width: 49%;
-}
-
-.container-section-4{
+    height: 250px;
     display: inline-block;
+    text-align: left;
+}
+.container-section-4{
+    height: 350px;
     background-color: hsla(50, 33%, 25%, .65);
     color: white;
-    width: 50%;
+
+}
+.container-section-4 h3{
+
+}
+.container-section-4 img{
+    width: 250px;
+    display: inline-block;
+}
+.container-section-4 p{
+    line-height: 23px;
+    width: 500px;
+    display: inline-block;
+    text-align: left;
 }
 
+.footer{
+    background-color: brown;
+    color: aliceblue;
+}
