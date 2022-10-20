@@ -81,7 +81,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 
-console.log(numbers2)
+console.log("List multiplied by the next number: " + numbers2)
 
-console.log(numbers)
-console.log(numbers.sort(function(a, b){return a- b}))
+console.log("Normal list: " + numbers)
+console.log("List organized: " + numbers.sort(function(a, b){return a- b}))
