@@ -54,12 +54,35 @@ function invert(){
 
 
 for(let i = word.length -1; i >= 0; i--){
-    console.log(word[i])
+    console.log(word[i]);
     word2 += word[i];
 
 }
-console.log("Using FOR loop above but with a wrong result")
-console.log(invert(word))
-console.log("Using function method above")
-console.log(word2)
-console.log("Using FOR loop above")
+console.log("Using FOR loop above but with a wrong result");
+console.log(invert(word));
+console.log("Using function method above");
+console.log(word2);
+console.log("Using FOR loop above");
+
+
+console.log("----------------------");
+console.log("third activity bellow");
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+let big = array[0];
+let sml = array[0];
+
+for(let i = 0; i < array.length; i++){
+    if(array[i].length > big.length){
+        big = array[i]
+    }
+}
+
+for(let i = 0; i < array.length; i++){
+    if(array[i].length < sml.length){
+        sml = array[i]
+    }
+}
+console.log(big)
+console.log(sml)
