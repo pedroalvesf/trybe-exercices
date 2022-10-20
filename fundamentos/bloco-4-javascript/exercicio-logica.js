@@ -86,3 +86,27 @@ for(let i = 0; i < array.length; i++){
 }
 console.log(big)
 console.log(sml)
+
+
+console.log('------------------')
+//Ask for question bellow : Um número primo é um número inteiro 
+//maior do que 1 que possui somente dois divisores, ou seja, 
+//é divisível por 1 e por ele mesmo. Sabendo disso, 
+//escreva um algoritmo que retorne o 
+//maior número primo entre 2 e 50.
+
+let num = 50;
+let numP =[];
+let bigP = 1;
+
+for(let i = 2; i <= num; i++){
+    for(let d =2; d < i; d++){
+        if(i % d === 0){
+           
+        }else{
+            numP.push(i);
+        }
+
+    }
+    console.log(numP)
+}
