@@ -80,11 +80,15 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 
+function organizedList (){ 
+    return numbers.sort(function(a, b){return a- b})
+}
+
 
 console.log("List multiplied by the next number: " + numbers2)
 
 console.log("Normal list: " + numbers)
 console.log("List organized: " + numbers.sort(function(a, b){return a- b}))
-
+console.log("List organized2: " + (organizedList()))
 
 
