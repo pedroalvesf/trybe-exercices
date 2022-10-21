@@ -65,8 +65,8 @@ console.log("Numbers higher than 20: " + (higherThan20))
 console.log("-------------------------------------")
 
 for (let a = 0; a <= 25; a ++){
-    // console.log(a)
-    // console.log(a/2)
+    console.log(a)
+    console.log(a/2)
 }
 
 //let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -85,3 +85,6 @@ console.log("List multiplied by the next number: " + numbers2)
 
 console.log("Normal list: " + numbers)
 console.log("List organized: " + numbers.sort(function(a, b){return a- b}))
+
+
+
