@@ -4,11 +4,25 @@
 
 let n = 16;
 let soma = 0;
-
+let nList = [];
 console.log(n)
-console.log(n.length)
 
-for(let i = 0; i > n.length; i++) {
-    
-}
+// console.log(n.toFixed(0).length);
+
+let n2 = n.toFixed(0);
+
+console.log(typeof n2)
+
+// console.log(n2)
+
+for(let i = 0; i < n2.length; i++){
+    nList.push(n2[i])
+    console.log(n2[i])
+    soma += parseInt[nList[i]]
+
+    console.log(soma)
+ }
+
+
+console.log(nList)
 
