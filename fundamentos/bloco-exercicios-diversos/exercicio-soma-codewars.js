@@ -8,3 +8,7 @@ let soma = 0;
 console.log(n)
 console.log(n.length)
 
+for(let i = 0; i > n.length; i++) {
+    
+}
+
