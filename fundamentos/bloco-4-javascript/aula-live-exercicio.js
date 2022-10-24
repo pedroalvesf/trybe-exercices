@@ -10,7 +10,6 @@
 // "Pessoa" é a mais nova.
 
 let soma = 0;
-
 for( let i = 1; i < 50; i++ ){
     soma += i;
 } 
@@ -36,9 +35,6 @@ if(contador === 50) {
     console.log("Mais de 50")
 }
 console.log("-----------------------------------")
-
-// 5 - Crie um algoritmo que recebe a idade de Carolzita, Murilo e Baêta e imprime quem é a pessoa mais nova no formato:
-// "Pessoa" é a mais nova.
 
 let Carolzita = 25;
 let Murilo = 10;
