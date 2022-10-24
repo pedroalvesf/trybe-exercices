@@ -10,19 +10,15 @@ console.log(n)
 // console.log(n.toFixed(0).length);
 
 let n2 = n.toFixed(0);
-
-console.log(typeof n2)
-
+console.log("type: " + typeof n2)
 // console.log(n2)
 
 for(let i = 0; i < n2.length; i++){
     nList.push(n2[i])
-    console.log(n2[i])
-    soma += parseInt[nList[i]]
-
-    console.log(soma)
+    // console.log(n2[i])
+    soma += parseInt(nList[i])
  }
-
-
+ 
+console.log("Sumup: " + soma)
 console.log(nList)
 
