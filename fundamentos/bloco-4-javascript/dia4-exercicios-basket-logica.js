@@ -81,8 +81,9 @@ console.log("Abacate: " + fruits.cAbacate.length)
 
 //Utilizar for dentro de for 
 for(let i = 0; i < basket.length; i++){
+    //utilizar o primeiro contador
     for(let o = 0; o < basket.length; o++){
-
+        // utilizar segundo contador
     }
 }
 
