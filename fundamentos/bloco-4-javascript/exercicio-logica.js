@@ -137,6 +137,19 @@
 
 
 //questao dos asteriscos
+// <<<<<<< main
+// let n = 5;
+// let linha = "*";
+// let coluna = "";
+// for(let i = 0; i <= n; i += 1){
+//     console.log(coluna)
+//     coluna = coluna + linha;
+   
+}
+// for(let i = 0; i < n; i += 1){
+//     console.log(coluna)
+// }
+=======
 // let n = 5;
 // let linha = "*";
 // let coluna = "";
@@ -149,31 +162,32 @@
 //     console.log(coluna)
 // }
 
-let usarName = 'Pedro Alves';
-let userPassword = 12345;
-let access;
+// let usarName = 'Pedro Alves';
+// let userPassword = 12345;
+// let access;
 
-if(usarName === 'Pedro Alves' && userPassword == '12345'){
-    access = true;  
-    console.log("Acesso permitido")
-}else{
-    access = false;
-    console.log("Acesso negado")
-}
+// if(usarName === 'Pedro Alves' && userPassword == '12345'){
+//     access = true;  
+//     console.log("Acesso permitido")
+// }else{
+//     access = false;
+//     console.log("Acesso negado")
+// }
 
-let breadStock = 5;
-let userBag = 0;
-if(access = true){
-    for(let i = 1; i <= breadStock;i++){
-        console.log("Breads added to bag: " + i)
-        console.log("Breads on stock: " + (breadStock - i))
-        console.log("Breads on bag: " + (userBag + i))
+// let breadStock = 5;
+// let userBag = 0;
+// if(access = true){
+//     for(let i = 1; i <= breadStock;i++){
+//         console.log("Breads added to bag: " + i)
+//         console.log("Breads on stock: " + (breadStock - i))
+//         console.log("Breads on bag: " + (userBag + i))
 
-        console.log("--------------------------------")
+//         console.log("--------------------------------")
    
-    }        
-    userBag += i;
-    breadStock -= i;
+//     }        
+//     userBag += i;
+//     breadStock -= i;
     
-}
+// }
 
+// >>>>>>> dia-3-javascript-logica
