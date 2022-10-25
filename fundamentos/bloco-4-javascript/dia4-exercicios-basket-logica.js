@@ -68,6 +68,10 @@ console.log("Banana: " + fruits.cBanana.length)
 console.log("Pera: " + fruits.cPera.length)
 console.log("Abacate: " + fruits.cAbacate.length)
 
+//Utilizar for dentro de for 
+for(let i = 0; i < basket.length; i++){
+
+}
 
 //resolucao do gabarito abaixo 
 
