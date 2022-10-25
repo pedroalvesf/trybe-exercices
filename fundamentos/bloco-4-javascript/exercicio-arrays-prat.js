@@ -26,18 +26,18 @@
 // console.log("--------------------------")
 
 
-let list = ['java', 'javascript', 'python', 'html', 'css'];
+// let list = ['java', 'javascript', 'python', 'html', 'css'];
 
-let big =list[0];
-let sml =list[0];
+// let big =list[0];
+// let sml =list[0];
 
-for(let i = 0; i < list.length; i++){
-    if(list[i].length > big.length ){
-        big = list[i]
-    }if(list[i].length < sml.length){
-        sml = list[i]
-    }
-}
+// for(let i = 0; i < list.length; i++){
+//     if(list[i].length > big.length ){
+//         big = list[i]
+//     }if(list[i].length < sml.length){
+//         sml = list[i]
+//     }
+// }
 
-console.log(big)
-console.log(sml)
+// console.log(big)
+// console.log(sml)
