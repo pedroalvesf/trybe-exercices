@@ -70,7 +70,9 @@ console.log("Abacate: " + fruits.cAbacate.length)
 
 //Utilizar for dentro de for 
 for(let i = 0; i < basket.length; i++){
-
+    for(let o = 0; o < basket.length; o++){
+        
+    }
 }
 
 //resolucao do gabarito abaixo 
