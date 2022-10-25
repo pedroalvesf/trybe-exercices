@@ -73,18 +73,18 @@ console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros fav
 // console.log("Biggest number: " + Math.max(...numbers))//Using function direct
 // console.log("Smallest number: " + Math.min(...numbers))//Using function direct
 
-// let list = ['java', 'javascript', 'python', 'html', 'css'];
+let list = ['java', 'javascript', 'python', 'html', 'css'];
 
-// let big =list[0];
-// let sml =list[0];
+let big =list[0];
+let sml =list[0];
 
-// for(let i = 0; i < list.length; i++){
-//     if(list[i].length > big.length ){
-//         big = list[i]
-//     }if(list[i].length < sml.length){
-//         sml = list[i]
-//     }
-// }
+for(let i = 0; i < list.length; i++){
+    if(list[i].length > big.length ){
+        big = list[i]
+    }if(list[i].length < sml.length){
+        sml = list[i]
+    }
+}
 
-// console.log(big)
-// console.log(sml)
+console.log(big)
+console.log(sml)
