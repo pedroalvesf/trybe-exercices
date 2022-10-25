@@ -132,6 +132,10 @@ console.log(smallestName(names));
 console.log(names.indexOf(smallestName(names)));
 
 console.log("--------------------------------------");
+const checkLength = Math.max(...names.map(element => element.length));
+console.log(checkLength)
+
+console.log("--------------------------------------");
 
 let numbers = [2, 3, 2, 5, 8, 2, 3];
 function repeatNumbers (numbers){
