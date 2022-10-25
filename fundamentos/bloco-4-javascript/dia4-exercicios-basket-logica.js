@@ -55,6 +55,17 @@ function countFruits(basket) {
     return fruits;
 
   }
+console.log("----------------------------")
+console.log("----------------------------")
+  const strFrequency = function (fruta) {
+    return fruta.reduce((count, word) => {
+          count[word] = (count[word] || 0) + 1;
+          return count;
+    }, {})
+  }
+console.log(strFrequency(basket));
+console.log("----------------------------")
+console.log("----------------------------")
 
 console.log(fruits)
 console.log("----------------------------")
@@ -71,7 +82,7 @@ console.log("Abacate: " + fruits.cAbacate.length)
 //Utilizar for dentro de for 
 for(let i = 0; i < basket.length; i++){
     for(let o = 0; o < basket.length; o++){
-        
+
     }
 }
 
