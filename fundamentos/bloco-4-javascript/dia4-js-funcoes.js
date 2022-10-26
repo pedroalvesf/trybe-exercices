@@ -136,25 +136,26 @@ const checkLength = Math.max(...names.map(element => element.length));
 console.log(checkLength)
 
 console.log("--------------------------------------");
+console.log("exe 5");
 
 let numbers = [2, 3, 2, 5, 8, 2, 3];
 function repeatNumbers (numbers){
-    let contRepeat = 0;
-    let contNumber = 0;
+    let countRepeat = 0;
+    let countNumber = 0;
     let indexRepeatedNumber =0;
 
     for(let i in numbers){
         let checkNumber = numbers[i];
         for (let i2 in numbers){
             if(checkNumber === numbers[i2]){
-                contNumber += 1;
+                countNumber += 1;
             }
         }
-        if(contNumber > contRepeat){
-            contRepeat = contNumber;
+        if(countNumber > countRepeat){
+            countRepeat = countNumber;
             indexRepeatedNumber = i;
         }
-        contNumber = 0;
+        countNumber = 0;
     }
     return numbers[indexRepeatedNumber];
 }
