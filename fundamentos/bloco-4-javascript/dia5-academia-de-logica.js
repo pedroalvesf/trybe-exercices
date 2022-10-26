@@ -66,25 +66,25 @@
 // verificaFimPalavra('joaofernando', 'fernan');
 // Retorno esperado: false;
 
-// let stringWord = 'trybe';
-// let stringEnding = 'be';
+let stringWord = 'trybe';
+let stringEnding = 'be';
 
-// function funcaoConfere(stringWord, stringEnding) {
+function funcaoConfere(stringWord, stringEnding) {
 
-//     let resultado = 0;
-//     let stringEndingReverse = stringEnding.split('').reverse().join(''); /// e b
-//     let stringWordReverse = stringWord.split('').reverse().join(''); // e b y r t
+    let resultado = 0;
+    let stringEndingReverse = stringEnding.split('').reverse().join(''); /// e b
+    let stringWordReverse = stringWord.split('').reverse().join(''); // e b y r t
     
-//     for(let i = 0; i < stringEndingReverse.length; i++){
-//         if(stringWordReverse[i] == stringEndingReverse[i]){
-//             resultado = true
-//         }else{
-//             resultado = false
-//         }
-//     }
-//     return resultado;
-//     }
-// console.log(funcaoConfere('trybe', 'be'))
+    for(let i = 0; i < stringEndingReverse.length; i++){
+        if(stringWordReverse[i] == stringEndingReverse[i]){
+            resultado = true
+        }else{
+            resultado = false
+        }
+    }
+    return resultado;
+    }
+console.log(funcaoConfere('trybe', 'be'))
 
 console.log("---------------------------")
 
@@ -109,7 +109,3 @@ let objeto = {
 
 
 console.log(funcaoConfere(stringWord2 , stringEnding2))
-
-let tamanho = objeto.stringEndingReverse2.length;
-
-console.log(tamanho)
