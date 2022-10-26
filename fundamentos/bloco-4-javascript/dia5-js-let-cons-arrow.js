@@ -28,14 +28,5 @@
 // const multiplication = (number, multi) => number * multi;
 // console.log(multiplication(8, 2));
 
-let x = 3;
-function func(bool){
-    if(bool){
-        x =48;
-    }
-    return x;
-}
-console.log(x)
-console.log(func(true))
-console.log(func(false))
-console.log(x)
+const soma = (a, b) => a + b;
+console.log(soma(1, 2))
