@@ -49,6 +49,6 @@ function contaParesEImpares(numbers){
     return numeros;
 }
 
-
 console.log(contaParesEImpares(numbers))
-console.log("a  ")
+console.log("Pares: " + contaParesEImpares(numbers).contaPares)
+console.log("Impares: " + contaParesEImpares(numbers).contaImpares)
