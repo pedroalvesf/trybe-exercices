@@ -44,8 +44,8 @@
 const substituaX = (nome) => {
   const frase = 'Tryber x aqui!';
   const fraseSplit = frase.split(' ');
-  for(let i in fraseSplit){
-    if(fraseSplit[i] == 'x'){
+  for (let i in fraseSplit) {
+    if (fraseSplit[i] == 'x') {
       fraseSplit[i] = nome;
     }
   }
@@ -55,14 +55,14 @@ const substituaX = (nome) => {
 console.log(substituaX('Bebeto'));
 
 const minhasSkills = (func) => {
-    const skills = ['HTML', 'CSS', 'JS'];
-    let resultado = `
+  const skills = ['HTML', 'CSS', 'JS'];
+  let resultado = `
     ${func}
     minhas tres principais habilidades sao: 
     `;
-    for(let i in skills){
-      resultado = `${resultado} ${skills[i]}`
-    }
-   return resultado;
+  for (let i in skills) {
+    resultado = `${resultado} ${skills[i]}`
+  }
+  return resultado;
 }
 console.log(minhasSkills(substituaX('Bebeto')))
