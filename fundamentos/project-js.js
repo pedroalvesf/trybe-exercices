@@ -114,6 +114,25 @@
 
 // console.log(gatoERato(r, g1, g2))
 
-console.log('--------------------------------')
-console.log('8 - FizzBuzz')
+// console.log('--------------------------------')
+// console.log('8 - FizzBuzz')
+// console.log('Questao incompleta')
+// const array = [2, 15, 7, 9, 45];
+// const array2 =[];
+// const fizzBuzz = (array) => {
 
+//     for(let i in array){
+//         if(array[i] % 3 == 0){
+//             array[i] = "fizz"
+//         }else if(array[i]%5){
+//             array[i] = "buzz"
+//         }else if(array[i]%3 == 0 && array[i]%5 == 0){
+//             array[i] = "fizzBuzz"
+//         }else{
+//             array[i] = "bug!"
+//             array2.push("bug!")
+//         }
+//     }
+//     return array[i]
+// }
+// console.log(fizzBuzz([2, 15]))
