@@ -136,60 +136,60 @@
 // console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // console.log('--------------------------------')
-console.log('9 - Codifique e Decodifique')
+// console.log('9 - Codifique e Decodifique')
 
 // a = 1 
 // e = 2 
 // i = 3
 // o = 4 
 // u = 5
-const frase = "hi there"
-const encode = (frase) => {
-    let frase2 =[];
-    for(let i in frase){
-        if      (frase[i] == 'a'){
-            frase2.push(1);
-        }else if(frase[i] == 'e'){
-            frase2.push(2);
-        }else if(frase[i] == 'i'){
-            frase2.push(3);
-        }else if(frase[i] == 'o'){
-            frase2.push(4);
-        }else if(frase[i] == 'u'){
-            frase2.push(5)
-        }else{
-            frase2.push(frase[i])
-        }
-    }
-    return frase2.join('');
+// const frase = "hi there"
+// const encode = (frase) => {
+//     let frase2 =[];
+//     for(let i in frase){
+//         if      (frase[i] == 'a'){
+//             frase2.push(1);
+//         }else if(frase[i] == 'e'){
+//             frase2.push(2);
+//         }else if(frase[i] == 'i'){
+//             frase2.push(3);
+//         }else if(frase[i] == 'o'){
+//             frase2.push(4);
+//         }else if(frase[i] == 'u'){
+//             frase2.push(5)
+//         }else{
+//             frase2.push(frase[i])
+//         }
+//     }
+//     return frase2.join('');
     
-}
+// }
 
-console.log(encode(frase))
+// console.log(encode(frase))
 
-const decode = (frase) => {
-    let frase3 = [];
-    for(let i in frase){
-        if      (frase[i] == '1'){
-            frase3.push('a');
-        }else if(frase[i] == '2'){
-            frase3.push('e');
-        }else if(frase[i] == '3'){
-            frase3.push('i');
-        }else if(frase[i] == '4'){
-            frase3.push('o');
-        }else if(frase[i] == '5'){
-            frase3.push('u')
-        }else{
-            frase3.push(frase[i])
-        }
-    }
-    return frase3.join('');
-}
+// const decode = (frase) => {
+//     let frase3 = [];
+//     for(let i in frase){
+//         if      (frase[i] == '1'){
+//             frase3.push('a');
+//         }else if(frase[i] == '2'){
+//             frase3.push('e');
+//         }else if(frase[i] == '3'){
+//             frase3.push('i');
+//         }else if(frase[i] == '4'){
+//             frase3.push('o');
+//         }else if(frase[i] == '5'){
+//             frase3.push('u')
+//         }else{
+//             frase3.push(frase[i])
+//         }
+//     }
+//     return frase3.join('');
+// }
 
-console.log(decode('h3 th2r2'))
-console.log('--------------------------------')
-console.log(decode(encode(frase)))
-console.log('--------------------------------')
-// console.log('10 - Lista de tecnologias')
+// console.log(decode('h3 th2r2'))
+// console.log('--------------------------------')
+// console.log(decode(encode(frase)))
+// console.log('--------------------------------')
+console.log('10 - Lista de tecnologias')
 
