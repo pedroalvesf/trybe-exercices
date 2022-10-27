@@ -114,23 +114,58 @@
 
 // console.log(gatoERato(r, g1, g2))
 
-console.log('--------------------------------')
-console.log('8 - FizzBuzz')
-const array = [2, 15, 7, 9, 45];
-const array2 =[];
-const fizzBuzz = (array) => {
+// console.log('--------------------------------')
+// console.log('8 - FizzBuzz')
+// const array = [2, 15, 7, 9, 45];
+// const array2 =[];
+// const fizzBuzz = (array) => {
 
-    for(let i in array){
-        if(array[i]%3 == 0 && array[i]%5 == 0){
-            array2.push("fizzBuzz!")
-        }else if(array[i]%5 == 0){
-            array2.push("buzz!")
-        }else if(array[i]%3 == 0 ){
-            array2.push("fizz!")
-        }else{
-            array2.push("bug!")
-        }
-    }
-    return array2
-}
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
+//     for(let i in array){
+//         if(array[i]%3 == 0 && array[i]%5 == 0){
+//             array2.push("fizzBuzz!")
+//         }else if(array[i]%5 == 0){
+//             array2.push("buzz!")
+//         }else if(array[i]%3 == 0 ){
+//             array2.push("fizz!")
+//         }else{
+//             array2.push("bug!")
+//         }
+//     }
+//     return array2
+// }
+// console.log(fizzBuzz([2, 15, 7, 9, 45]))
+
+// console.log('--------------------------------')
+// console.log('9 - Codifique e Decodifique')
+
+// a = 1 
+// e = 2 
+// i = 3
+// o = 4 
+// u = 5
+// const frase = "eu quero morar nos eua"
+// const encode = (frase) => {
+//     let frase2 =[];
+//     for(let i in frase){
+//         if      (frase[i] == 'a'){
+//             frase2.push(1);
+//         }else if(frase[i] == 'e'){
+//             frase2.push(2);
+//         }else if(frase[i] == 'i'){
+//             frase2.push(3);
+//         }else if(frase[i] == 'o'){
+//             frase2.push(4);
+//         }else if(frase[i] == 'u'){
+//             frase2.push(5)
+//         }else{
+//             frase2.push(frase[i])
+//         }
+//     }
+//     return frase2.join('');
+// }
+// console.log(encode(frase))
+
+
+// console.log('--------------------------------')
+// console.log('10 - Lista de tecnologias')
+
