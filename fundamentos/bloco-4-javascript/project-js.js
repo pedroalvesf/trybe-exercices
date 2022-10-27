@@ -146,8 +146,6 @@ console.log('9 - Codifique e Decodifique')
 const frase = "hi there"
 const encode = (frase) => {
     let frase2 =[];
-    
-
     for(let i in frase){
         if      (frase[i] == 'a'){
             frase2.push(1);
@@ -163,7 +161,7 @@ const encode = (frase) => {
             frase2.push(frase[i])
         }
     }
-    return frase2.split('');
+    return frase2.join('');
     
 }
 
@@ -190,6 +188,8 @@ const decode = (frase) => {
 }
 
 console.log(decode('h3 th2r2'))
-// console.log('--------------------------------')
+console.log('--------------------------------')
+console.log(decode(encode(frase)))
+console.log('--------------------------------')
 // console.log('10 - Lista de tecnologias')
 
