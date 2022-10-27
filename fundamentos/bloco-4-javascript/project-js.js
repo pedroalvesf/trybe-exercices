@@ -193,3 +193,6 @@
 // console.log('--------------------------------')
 console.log('10 - Lista de tecnologias')
 
+const techsLearning = (name) => {
+    let
+}
