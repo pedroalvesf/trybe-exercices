@@ -1,18 +1,18 @@
-//document.getElementById("IdDoElemento") = 
+document.getElementById("IdDoElemento") = 
 
-// document.getElementById("paragraph");
-// document.getElementById("paragraph").innerText = 'Star Wars'
-// paragraph.style.color = "red";
+document.getElementById("paragraph");
+document.getElementById("paragraph").innerText = 'Star Wars'
+paragraph.style.color = "red";
 
-// document.getElementById("page-title").innerText = 'Best movie';
+document.getElementById("page-title").innerText = 'Best movie';
 
 
-// document.querySelector("p"); //it will return the first element, only the first one
+document.querySelector("p"); //it will return the first element, only the first one
 
-// document.querySelector(".nome-da-classe p"); // return related to css
-// // use the querySelector with class or id to return exactly
+document.querySelector(".nome-da-classe p"); // return related to css
+// use the querySelector with class or id to return exactly
 
-// document.querySelectorAll(".fatherClass .childClass").length // control as a list
+document.querySelectorAll(".fatherClass .childClass").length // control as a list
 
 
 const header = document.getElementById("header-container");
