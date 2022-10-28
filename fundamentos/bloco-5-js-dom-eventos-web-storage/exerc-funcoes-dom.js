@@ -46,17 +46,34 @@ mudaCorAgain();
 //     let arrumando = document.getElementsByClassName('title')[0];
 //     arrumando.innerHTML = "Exercício - JavaScript";
 // }
+// arrumaText();
 
-arrumaText();
-function arrumaTextAgain(){
-    let arrumandoAgain = document.querySelector('header, h1').innerHTML = "Exercício - JavaScript";
-    // arrumandoAgain.innerHTML = "Exercício - JavaScript";
+function arrumaComTag(){
+    let arrumandoTag = document.getElementsByTagName('h1')[0];
+    arrumandoTag.innerHTML = "Exercício - JavaScript";
 }
+arrumaComTag();
 
- arrumaTextAgain();
 
-// function arrumaComTag(){
-//     let arrumandoTag = document.getElementsByTagName('h1')[0];
-//     arrumandoTag.innerHTML = "Exercício - JavaScript";
+//Quando utilizo query acaba alterando o css 
+// function arrumaTextAgain(){
+//     let arrumandoAgain = document.querySelector('header, h1');
+//     arrumandoAgain.innerHTML = "Exercício - JavaScript";
 // }
-// arrumaComTag();
+
+//  arrumaTextAgain();
+
+ function deixaMaiusculo(){
+    let paragraph = document.getElementsByTagName('p')[0];
+    paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+ }
+
+ deixaMaiusculo();
+
+ function showAllP(){
+    let paragraphs = document.querySelectorAll('p');
+    for(let i = 0; i < paragraphs.length; i++){
+        console.log(paragraphs[i].innerHTML);
+    }
+ }
+ showAllP();
