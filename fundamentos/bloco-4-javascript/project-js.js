@@ -251,3 +251,15 @@ function hydrate(string) {
   
   
   }
+  console.log('outra forma de fazer ')
+  function hydrate(stringText) {
+    let stringNumber = stringText.match(/\d+/g);
+    let soma = 0;
+    for (let i = 0; i < stringNumber.length; i += 1) {
+      soma += Number(stringNumber[i]);
+    }
+    if (soma === 1) {
+      return `${soma} copo de água`;
+    }
+    return `${soma} copos de água`;
+  }
