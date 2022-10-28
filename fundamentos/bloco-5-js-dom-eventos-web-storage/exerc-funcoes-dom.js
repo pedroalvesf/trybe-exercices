@@ -22,12 +22,18 @@
 // for(let i of obj) {  
 //     i.style.color= "blue";
 // }
-function mudatexto(){
-    let paragraph = document.getElementsByTagName('p')[1];
-    paragraph.innerHTML = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum ";
+// function mudatexto(){
+//     let paragraph = document.getElementsByTagName('p')[1];
+//     paragraph.innerHTML = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum ";
 
+// }
+// mudatexto();
+
+function mudaTexto2(){
+    let paragraph = document.querySelectorAll('.center-content p')[1];
+    paragraph.innerHTML = "lorem ipsum lorem ipsum lorem ipsum lorem ipsum ";
 }
-mudatexto();
+mudaTexto2();
 
 function mudaCor(){
     let backColor = document.getElementsByClassName('main-content')[0];
@@ -41,6 +47,12 @@ function mudaCorAgain(){
 }
 
 mudaCorAgain();
+//utiliznado querySelector 
+// function mudaCorAgainButDiferente(){
+//     let backColor3 = document.querySelector('.center-content');
+//     backColor3.style.backgroundColor = 'black';
+// }
+// mudaCorAgainButDiferente();
 
 // function arrumaText(){
 //     let arrumando = document.getElementsByClassName('title')[0];
@@ -48,20 +60,20 @@ mudaCorAgain();
 // }
 // arrumaText();
 
-function arrumaComTag(){
-    let arrumandoTag = document.getElementsByTagName('h1')[0];
-    arrumandoTag.innerHTML = "Exercício - JavaScript";
-}
-arrumaComTag();
+// function arrumaComTag(){
+//     let arrumandoTag = document.getElementsByTagName('h1')[0];
+//     arrumandoTag.innerHTML = "Exercício - JavaScript";
+// }
+// arrumaComTag();
 
 
 //Quando utilizo query acaba alterando o css 
-// function arrumaTextAgain(){
-//     let arrumandoAgain = document.querySelector('header, h1');
-//     arrumandoAgain.innerHTML = "Exercício - JavaScript";
-// }
+function arrumaTextAgain(){
+    let arrumandoAgain = document.querySelector('header h1');
+    arrumandoAgain.innerHTML = "Exercício - JavaScripta";
+}
 
-//  arrumaTextAgain();
+ arrumaTextAgain();
 
  function deixaMaiusculo(){
     let paragraph = document.getElementsByTagName('p')[0];
