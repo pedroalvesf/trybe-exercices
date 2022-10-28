@@ -191,5 +191,29 @@
 // console.log('--------------------------------')
 // console.log(decode(encode(frase)))
 // console.log('--------------------------------')
-console.log('10 - Lista de tecnologias')
+// console.log('10 - Lista de tecnologias')
+//|| '2'|| '3' || '4' || '5' || '6' || '7' || '8' || '9'
 
+
+function hydrate(string) {
+    // seu código aqui
+  
+  let numbersString = [];
+  let sum = 0;
+  
+  for(let i = 0; i < string.length; i++){
+    if(!isNaN(Number(string[i]))){
+      numbersString.push(Number(string[i]));
+    }
+  }
+    for (let i =0; i < numbersString.length; i++){
+    sum += numbersString[i];
+  }
+    if(sum > 1){
+      return sum + ' copos de água'
+    }else{
+      return sum + ' copo de água'
+    }
+  
+  
+  }
