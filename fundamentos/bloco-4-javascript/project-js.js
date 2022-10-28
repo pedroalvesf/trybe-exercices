@@ -194,6 +194,40 @@
 // console.log('10 - Lista de tecnologias')
 //|| '2'|| '3' || '4' || '5' || '6' || '7' || '8' || '9'
 
+function generatePhoneNumber(array) {
+    //  seu código aqui
+    let number = "(xx) xxxxx-xxxx";
+    let numberRepeat = 0;
+  
+    if (array.length != 11) {
+      return 'Array com tamanho incorreto.'
+    }
+    for (let i in array) {
+      number = number.replace('x', array[i]);
+      for (let o in array) {
+        if (array[i] == array[o]) {
+          numberRepeat++;
+        }
+      }
+      if (array[i] < 0 || array[i] > 9 || numberRepeat >= 3) {
+        return 'não é possível gerar um número de telefone com esses valores'
+      }
+      numberRepeat = 0;
+    }
+    return number
+  }
+  
+
+function triangleCheck(lineA, lineB, lineC) {
+    // seu código aqui
+        if (lineA < lineB + lineC && lineA > Math.abs(lineB - lineC) || lineB < lineA + lineC && lineB > Math.abs(lineA - lineC) || lineC < lineA + lineB && lineC > Math.abs(lineB - lineA) ){
+          return true
+        }else{
+          return false
+        }
+  
+  }
+  
 
 function hydrate(string) {
     // seu código aqui
