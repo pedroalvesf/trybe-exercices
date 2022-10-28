@@ -55,6 +55,9 @@
 //         }
 //     }return contador;
 // }
+
+// console.log(highestcount(array))
+// console.log(Math.max(...array))
 // const highestcount2 = (array) =>{
 //     Math.max(...array)
 //     let contador2 = 0;
@@ -65,10 +68,9 @@
 //     }
 //     return contador2;
 // }
-// console.log(Math.max(...array))
-// console.log(highestcount2(array))
-// console.log(highestcount(array))
-//only server to strings
+
+
+// only server to strings
 // const counts = {};
 // const sampleArray = ['a', 'a', 'b', 'c'];
 // sampleArray.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
@@ -167,6 +169,27 @@
 
 // console.log(encode(frase))
 
+// function encode(string) {
+//     // seu código aqui
+//   let frase2 = '';
+//     for(let i = 0; i < string.length; i++){
+//       if(string[i] === 'a'){
+//         frase2 += '1';
+//       }else if(string[i] === 'e'){
+//         frase2 += '2';
+//       }else if(string[i] === 'i'){
+//         frase2 += '3';
+//       }else if(string[i] === 'o'){
+//         frase2 += '4';
+//       }else if(string[i] === 'u'){
+//         frase2 += '5';
+//       }else{
+//         frase2 += string[i]
+//       }
+//     }
+//     return frase2;
+//   }
+// console.log(encode('hi'))
 // const decode = (frase) => {
 //     let frase3 = [];
 //     for(let i in frase){
@@ -191,8 +214,13 @@
 // console.log('--------------------------------')
 // console.log(decode(encode(frase)))
 // console.log('--------------------------------')
-console.log('10 - Lista de tecnologias')
+// console.log('10 - Lista de tecnologias')
 
-const techsLearning = (name) => {
-    let
+const techsLearning = (array, name) => {
+    let obj = {}
+
+    for(let i in array){  
+        obj[i] = array[i]
+    }
+    return obj
 }
