@@ -9,6 +9,10 @@
   .red {
     background-color: red;
   }
+
+  .blue{
+    background-color: blue;
+  }
   
   .circle {
     display: inline-block;
