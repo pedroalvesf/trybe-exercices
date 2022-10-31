@@ -1,15 +1,15 @@
 const paragraph = document.getElementById("paragraph");
 paragraph.style.color = "red";
 
-// const mudaTitulo = document.getElementById("page-title"); //with id
-// mudaTitulo.innerHTML = "Favorite Movie";
+const changeTitleWithId = document.getElementById("page-title"); //with id
+changeTitleWithId.innerHTML = "Favorite Movie";
 
-// const mudaTituloh2 = document.querySelector(".container-header h2"); //with class
-// mudaTituloh2.innerHTML = "Favorite Movie";
+const changeTitleh2WithClass = document.querySelector(".container-header h2"); //with class
+changeTitleh2WithClass.innerHTML = "Favorite Movie";
 
 
-const mudaTituloh2 = document.querySelector("header h2"); //without id or class
-mudaTituloh2.innerHTML = "Favorite Movieaaa";
+const changeTitleWithoutIdofClass = document.querySelector("header h2"); //without id or class
+changeTitleWithoutIdofClass.innerHTML = "Favorite Movieaaa";
 
 const changeParagraphContentWithId = document.getElementById("paragraph");
 changeParagraphContentWithId.innerHTML = "Star Wars";
@@ -28,4 +28,42 @@ const changeH4colorWithoutId = document.querySelector("header h4");
 changeH4colorWithoutId.style.backgroundColor = "green";
 
 const changeHeaderColorWithClass = document.getElementsByClassName("container-header")[0];
-changeHeaderColorWithClass.style.backgroundColor = "yellow";
+changeHeaderColorWithClass.style.backgroundColor = "grey";
+
+//Transforming everything in functions 
+
+const changingParagrathColor = (color) =>{
+    const paragrathColor = document.getElementById("paragraph"); // id
+    paragrathColor.style.color = color;
+}
+changingParagrathColor("orange");
+
+function changingParagrathColorAgain (){
+    const paragrathColor = document.querySelector("paragraph");//id
+    paragrathColor.style.color = color;
+}
+changingParagrathColor("yellow");
+
+function changingParagrathColorAgain (){
+    const paragrathColor = document.querySelector("header p");// without class or id
+    paragrathColor.style.backgroundColor = "black";
+}
+changingParagrathColorAgain();
+
+const changingInnerTitleWithFunction = () => {
+    const changingInnerTitleWithFunction = document.getElementById("page-title");
+    changingInnerTitleWithFunction.innerHTML = "Favorite movie ever"
+}
+changingInnerTitleWithFunction();
+
+const changingInnerTitleWithFunction2 = () => {
+    const changingInnerTitleWithFunction = document.querySelector("header h2");
+    changingInnerTitleWithFunction.innerHTML = "Favorite Movie Ever"
+}
+changingInnerTitleWithFunction2();
+
+const changingInnerTitleWithFunction3 = () => {
+    const changingInnerTitleWithFunction = document.querySelector(".container-header h2");
+    changingInnerTitleWithFunction.innerHTML = "Favorite Movie Ever!!!"
+}
+changingInnerTitleWithFunction3();
