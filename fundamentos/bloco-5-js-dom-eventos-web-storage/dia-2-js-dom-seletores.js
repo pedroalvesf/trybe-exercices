@@ -67,3 +67,9 @@ const changingInnerTitleWithFunction3 = () => {
     changingInnerTitleWithFunction.innerHTML = "Favorite Movie Ever!!!"
 }
 changingInnerTitleWithFunction3();
+
+const changinHeaderAlign = () =>{
+    const changingTextAlign = document.querySelector(".container-header");
+    changingTextAlign.style.textAlign = "center"
+}
+changinHeaderAlign();
