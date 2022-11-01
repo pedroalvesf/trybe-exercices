@@ -7,21 +7,24 @@ let skinLisTest = [
 
 const skinTextInput = document.querySelector('.skin-text-input'); //texto
 const addSkinButton = document.querySelector('.new-skin-button'); // button
+const containerSkin = document.querySelector('.skin-list-container');
 
 const validateInput = () => skinTextInput.value.trim().length > 0;
 const validateInputNeutral = () => skinTextInput.value.trim().length == 0;
 
 
 const handleAddSkin = () => {
+    // alert('Botao apertado')
+    17 - 22
     const inputIsValid = validateInput();
 
     if(!inputIsValid){
         return skinTextInput.classList.add("error");
         //skinTextInput.innerHTML.add("invalid value"); como adicionar texto ao erro
     }
-
-    const skinItemContainer = document.createElement('div')
-    skinItemContainer.classList.add('skin-item')
+    const newSkin = document.createElement('div');
+    newSkin.innerText = skinLisTest[0].skinName; //como alterar para pegar o input ?
+    containerSkin.appendChild(newSkin); 
 }
 
 const handleInputChange = () => {
@@ -33,12 +36,21 @@ const handleInputChange = () => {
     }
 };
 
+
+addSkinButton.addEventListener("click", handleAddSkin);
+//addSkinButton.addEventListener("click", () => handleAddSkin());
+// addSkinButton.addEventListener("click", () => {
+
+
+// }
+skinTextInput.addEventListener("change", () => handleInputChange());
+
+
+
+
+
 // addSkinButton.addEventListener("click", (event) => {
 //     if(event.key == "click"){
 //         handleAddSkin();
 //     }
-// });
-
-addSkinButton.addEventListener("click", () => handleAddSkin());
-skinTextInput.addEventListener("change", () => handleInputChange());
-
+// }
