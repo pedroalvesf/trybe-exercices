@@ -1,5 +1,12 @@
-const skinTextInput = document.querySelector('.skin-text-input');
-const addSkinButton = document.querySelector('.new-skin-button');
+let skinLisTest = [
+    {skinName: "USP Priststream"},
+    {skinName: "AWP Gungnir"},
+    {skinName: "M4A41-S Pritstream"},
+];
+
+
+const skinTextInput = document.querySelector('.skin-text-input'); //texto
+const addSkinButton = document.querySelector('.new-skin-button'); // button
 
 const validateInput = () => skinTextInput.value.trim().length > 0;
 const validateInputNeutral = () => skinTextInput.value.trim().length == 0;
@@ -10,6 +17,7 @@ const handleAddSkin = () => {
 
     if(!inputIsValid){
         return skinTextInput.classList.add("error");
+        //skinTextInput.innerHTML.add("invalid value"); como adicionar texto ao erro
     }
 
     const skinItemContainer = document.createElement('div')
@@ -25,6 +33,12 @@ const handleInputChange = () => {
     }
 };
 
-addSkinButton.addEventListener("click", () => handleAddSkin());
+// addSkinButton.addEventListener("click", (event) => {
+//     if(event.key == "click"){
+//         handleAddSkin();
+//     }
+// });
 
+addSkinButton.addEventListener("click", () => handleAddSkin());
 skinTextInput.addEventListener("change", () => handleInputChange());
+

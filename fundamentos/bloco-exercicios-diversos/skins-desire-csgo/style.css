@@ -12,16 +12,21 @@ body {
 .container-main{
     border: solid white 2px;
     width: 40%;
-    height: 5%;
     padding: 30px 40px;
     margin-left:  30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .new-skin-container{
     background-color: white;
     padding: 30px 20px;
+    width: 70%;
     border-radius: 5px;
     box-shadow: 0 15px 30px black;
+    display: flex;
+    justify-content: space-between;
 }
  .skin-text-input{
     width: 80%;
@@ -32,14 +37,25 @@ body {
     width: 15%;
     justify-content: auto;
 }
+.skin-text-list{
+    width: 80%;
+}
 
 .skin-list-container {
     background-color: white;
+    margin-top: 20px;
     padding: 30px 20px;
-    margin-top: 60px;
     border-radius: 10px;
     box-shadow: 0 15px 30px black;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 
+}
+
+.skin-item{
+    border-radius: 2px black;
+    height: 68px;
 }
 
 .skin-list-button {
@@ -53,4 +69,5 @@ body {
 
 .error::placeholder{
     color: red;
+    
 }
