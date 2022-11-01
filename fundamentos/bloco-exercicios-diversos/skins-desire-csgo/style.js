@@ -54,3 +54,18 @@ skinTextInput.addEventListener("change", () => handleInputChange());
 //         handleAddSkin();
 //     }
 // }
+
+//const alvo = (evento) => {
+//     console.log(evento.target)
+//  let corClicada = evento.target.className;
+//  let aplicaCor = document.querySelector('body');
+//  aplicarCord.className = corClicada;
+//
+//}
+
+//const darkMode = document.querySelector('.apply-dark-mode');
+//darMode.addEventListener('click', alvo);
+//
+//
+//
+//
