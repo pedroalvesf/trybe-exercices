@@ -40,22 +40,33 @@ body {
 
 .skin-list-container {
     background-color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 15px 30px black;
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
 
 }
 
 .skin-item{
     border-radius: 2px black;
-    height: 68px;
+    justify-content: space-between;
+    padding-left: 10px;
+    border: solid 1px black;
+    background-color: grey;
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+    display: flex;
+
+
 }
 
-
+.skin-item-remove-button{
+    
+}
 
 /* Utilities*/
 .error {

@@ -15,7 +15,7 @@ const validateInputNeutral = () => skinTextInput.value.trim().length == 0;
 
 const handleAddSkin = () => {
     // alert('Botao apertado')
-    17 - 22
+
     const inputIsValid = validateInput();
 
     if(!inputIsValid){
@@ -23,8 +23,14 @@ const handleAddSkin = () => {
         //skinTextInput.innerHTML.add("invalid value"); como adicionar texto ao erro
     }
     const newSkin = document.createElement('div');
-    newSkin.innerText = skinLisTest[0].skinName; //como alterar para pegar o input ?
+    newSkin.className = 'skin-item';
+    newSkin.innerText = skinLisTest[1].skinName;
     containerSkin.appendChild(newSkin); 
+
+    const newSkinRemove = document.createElement('button')
+    newSkinRemove.className = 'skin-item-remove-button';
+    newSkinRemove.innerHTML = 'Remove';
+    newSkin.appendChild(newSkinRemove);
 }
 
 const handleInputChange = () => {
@@ -39,33 +45,17 @@ const handleInputChange = () => {
 
 addSkinButton.addEventListener("click", handleAddSkin);
 //addSkinButton.addEventListener("click", () => handleAddSkin());
-// addSkinButton.addEventListener("click", () => {
-
-
-// }
 skinTextInput.addEventListener("change", () => handleInputChange());
 
 
 
-
-
-// addSkinButton.addEventListener("click", (event) => {
-//     if(event.key == "click"){
-//         handleAddSkin();
-//     }
-// }
 
 //const alvo = (evento) => {
 //     console.log(evento.target)
 //  let corClicada = evento.target.className;
 //  let aplicaCor = document.querySelector('body');
 //  aplicarCord.className = corClicada;
-//
 //}
 
 //const darkMode = document.querySelector('.apply-dark-mode');
 //darMode.addEventListener('click', alvo);
-//
-//
-//
-//
