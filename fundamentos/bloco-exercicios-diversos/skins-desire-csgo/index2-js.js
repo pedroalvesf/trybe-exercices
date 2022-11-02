@@ -14,10 +14,20 @@ const geraCardMovie = () => {
         const novoCardText = document.createElement('p');
         novoCardText.innerText = movieList[index];
         novoCard.appendChild(novoCardText)
+
     }
 
 }
 geraCardMovie();
+
+// const geraCardMovieText = () => {
+//     for(let index = 0; index < movieList.length; index++) {
+//         const novoCardText = document.createElement('p');
+//         novoCardText.innerText = movieList[index];
+//         containerFilmes.children[index].appendChild(novoCardText)
+//     }
+// }
+// geraCardMovieText();
 //requisito 1
 function puxaCard () {
     const cardPuxado = document.getElementsByClassName('card-filme')[0];
@@ -28,16 +38,47 @@ puxaCard();
 //requisito 3 
 
 function selecionandoT(event){
-    console.log(event.target)
+    // const eventoAlvo = event.target
+    // console.log(eventoAlvo.parentNode)
+    // event.target.classList.add("favoritado");
+    for(let cardFilmes of containerFilmes.children){
+        console.log(cardFilmes)
+        cardFilmes.classList.remove("favoritado")
+        cardFilmes.firstElementChild.removeAttribute("id", "filme-selecionado")
+    }
+
+    addClass(event.target.parentNode);
+    colocaId(event.target)
+    // colocaId(event.target);
+    // addicId(event.target)
 }
 
-containerFilmes.firstElementChild.addEventListener('click', selecionandoT);
+function selecionandoP(event){
+    colocaId(event.target);
+    
+}
+
+//filme-selecionado
+for(let cardFilmes of containerFilmes.children){
+    console.log(cardFilmes)
+    cardFilmes.addEventListener('click', selecionandoT);
+    cardFilmes.firstElementChild.addEventListener('click', selecionandoT);
+}
+// for (let index = 0; index < containerFilmes.children.length; index++){
+// containerFilmes.children[index].addEventListener('click', selecionandoT);
+// }
 
 function addClass(element) {
-    return element.classList.add("favoritado")
-    //adicionar o id filme-selecionado
-    //adicionar o a classe favoritado
+    element.classList.add("favoritado")
+
 }
+
+function colocaId(element) { 
+    element.setAttribute("id",  "filme-selecionado")
+}
+// function colocaId(element) {
+//     // element.add.id("filme-selecionado")
+// }
 
 // const cardSelection = () => {
 //     for (let index = 0; index < movieList.length; index++) {
