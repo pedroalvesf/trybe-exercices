@@ -29,11 +29,12 @@ const createDaysOfTheWeek = () => {
     }
   }
   criandoDias();
-
+//tentar fazer criacano de funcao para adicionar a class holiday
   function addClassHoliday(){
-    for(let index of decemberDaysList){
-
+    for(let index =0; index < decemberDaysList.length; index++){
+      if(decemberDaysList[index] == 24 || decemberDaysList[index] == 25 || decemberDaysList[index] == 31)
+      daysUlList.firstElementChild[index].add("day holiday")
     }
-    console.log(addClassHoliday())
+
   }
   addClassHoliday();
