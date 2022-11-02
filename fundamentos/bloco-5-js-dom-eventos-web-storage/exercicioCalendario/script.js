@@ -86,3 +86,4 @@ buttonFriday();
 
 // Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira;
 // Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
+
