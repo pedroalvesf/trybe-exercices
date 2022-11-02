@@ -22,6 +22,8 @@ const createDaysOfTheWeek = () => {
   function criandoDias() {
     //for(let index = 0; index < decemberDaysList.length; index++){
 //}
+//criar funcao de cricao separada das atribuicoes 
+
     for(let index =0; index < decemberDaysList.length; index++){
         const days = document.createElement('li');
         const decemberDays = decemberDaysList[index];
@@ -46,10 +48,7 @@ const createDaysOfTheWeek = () => {
   }
   criandoDias();
 
-
 function buttonHoliday () {
-  
-
   let button = document.createElement('button')
   button.innerText = 'Feriados';  
   button.setAttribute("id",  "btn-holiday")
@@ -57,8 +56,6 @@ function buttonHoliday () {
   buttonContainer.appendChild(button)
 }
 buttonHoliday();
-
-
 
 function changeColorHoliday() {
   let changeColor = document.querySelectorAll(".holiday");
@@ -77,7 +74,7 @@ changeColorHoliday();
 // Adicione esse botão como filho/filha da tag <div> com classe "buttons-container".
 
 function buttonFriday(){
-  let button = document.createElement('button')
+  let button = document.createElement('button');
   button.innerText = 'Sexta-feira';
   button.setAttribute("id", "btn-friday");
   buttonContainer.appendChild(button)
@@ -86,4 +83,38 @@ buttonFriday();
 
 // Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira;
 // Adicione ao botão “Sexta-feira” um evento de “click” e modifique o texto a ser exibido nos dias que são sextas-feiras.
+//alguma forma de chegar na class do filho pelo pai
+
+function changeFriday(){
+  let changeFridayDay = document.querySelectorAll(".friday");
+  let callButton = document.querySelector('#btn-friday');
+  const fridaysList = [4, 11, 18, 25];
+  callButton.addEventListener('click', () => {
+    for(let index = 0; index < changeFridayDay.length; index++){
+      changeFridayDay[index].classList.toggle('holiday22');
+      // if(changeFridayDay[index].classList.value('holiday22')){
+      //   changeFridayDay[index].innerText = 'SEXTOU';
+      // } //tentar fazer com uma condicao entre eles 
+      if (changeFridayDay[index].innerText == 'Sextou'){
+        changeFridayDay[index].innerText = fridaysList[index];
+      }else{
+        changeFridayDay[index].innerText = 'Sextou';
+      }
+    }
+  } )
+}
+
+changeFriday();
+
+// function changeFriday2(){
+//   let start = 4;
+//   for(let index = 0; index < 4; index++){
+//     if(start + 7[index] == decemberDaysList.innerText.value){
+//       decemberDaysList.innerText = 'SEXTOU!';
+//     }
+//     console.log(decemberDaysList.innerText.value)
+//   }
+// }
+// changeFriday2();
+
 
