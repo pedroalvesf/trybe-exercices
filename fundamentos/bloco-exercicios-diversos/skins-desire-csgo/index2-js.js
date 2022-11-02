@@ -2,6 +2,8 @@ const movieList = ['Toy Story', 'Matrix', 'Matrix2', 'MatrixUltimo']
 
 const containerFilmes = document.querySelector('#filmes');
 
+
+
 //requisito 2
 const geraCardMovie = () => {
     for (let index = 0; index < movieList.length; index++) {
@@ -25,17 +27,16 @@ puxaCard();
 
 //requisito 3 
 
-const alvo = (evento) => {
-    console.log(evento.target.className);
-    let filmeClicado = evento.target.className;
-    filmeClicado.classList.add("favoritado")
+function selecionandoT(event){
+    console.log(event.target)
 }
 
-const handleIdAndClassChange = () =>{
+containerFilmes.firstElementChild.addEventListener('click', selecionandoT);
 
+function addClass() {
+    
     //adicionar o id filme-selecionado
     //adicionar o a classe favoritado
-    
 }
 
 // const cardSelection = () => {
