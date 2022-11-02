@@ -24,7 +24,7 @@ const handleAddSkin = () => {
     }
     const newSkin = document.createElement('div');
     newSkin.className = 'skin-item';
-    newSkin.innerText = skinLisTest[1].skinName;
+    newSkin.innerText = skinTextInput.value;
     containerSkin.appendChild(newSkin); 
 
     const newSkinRemove = document.createElement('button')
