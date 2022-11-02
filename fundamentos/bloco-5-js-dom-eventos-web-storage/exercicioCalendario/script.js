@@ -118,3 +118,13 @@ changeFriday();
 // changeFriday2();
 
 
+function taskList (string) { 
+  const myTaskContainer = document.querySelector(".my-tasks");
+  const myTaskList = document.createElement("span");
+  myTaskList.innerText = string;
+  myTaskContainer.appendChild(myTaskList)
+
+}
+
+taskList('cozinhar');
+
