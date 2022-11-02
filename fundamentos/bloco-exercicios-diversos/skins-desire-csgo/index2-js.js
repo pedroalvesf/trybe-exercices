@@ -33,8 +33,8 @@ function selecionandoT(event){
 
 containerFilmes.firstElementChild.addEventListener('click', selecionandoT);
 
-function addClass() {
-    
+function addClass(element) {
+    return element.classList.add("favoritado")
     //adicionar o id filme-selecionado
     //adicionar o a classe favoritado
 }
