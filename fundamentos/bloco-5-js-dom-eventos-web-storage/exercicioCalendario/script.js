@@ -94,9 +94,6 @@ function changeFriday(){
   callButton.addEventListener('click', () => {
     for(let index = 0; index < changeFridayDay.length; index++){
       changeFridayDay[index].classList.toggle('holiday22');
-      // if(changeFridayDay[index].classList.value('holiday22')){
-      //   changeFridayDay[index].innerText = 'SEXTOU';
-      // } //tentar fazer com uma condicao entre eles 
       if (changeFridayDay[index].innerText == 'Sextou'){
         changeFridayDay[index].innerText = fridaysList[index];
       }else{
@@ -145,3 +142,38 @@ function addSubtitleTask(string) {
 }
 
 addSubtitleTask('blue');
+
+// Implemente uma função que selecione uma tarefa;
+// Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada;
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
+
+function taskSelector() {
+  let selectButton = document.querySelector('.task')
+  selectButton.addEventListener('click', () =>{
+    console.log(selectButton);
+    selectButton.classList.toggle('selected');
+  })
+
+
+}
+taskSelector();
+  // const selectedTask = (event.target)
+  // taskClassRemove();
+  // event.target.classList.toggle('selected')
+  //.classList.toggle('selected');
+  // selectedTask.addEventListener('click', () => {
+  //   event.target.classList.toggle('selected');
+  // })
+  
+// function divSelected(element){
+//   element.classList.toggle('selected')
+// }
+// divSelected();
+
+// function taskClassRemove(){
+//   for(let i = 0; i < taskList.length; i += 1){
+//     if(taskList[i].classList.contains('selected')){
+//       taskList[i].classList.remove('selected')
+//     }
+// }
+// }
