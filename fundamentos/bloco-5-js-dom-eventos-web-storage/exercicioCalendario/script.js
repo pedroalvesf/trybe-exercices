@@ -14,6 +14,8 @@ const createDaysOfTheWeek = () => {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
+
+  const myTaskContainer = document.querySelector(".my-tasks");
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
   const daysUlList = document.querySelector("#days");
@@ -119,7 +121,7 @@ changeFriday();
 
 
 function taskList (string) { 
-  const myTaskContainer = document.querySelector(".my-tasks");
+
   const myTaskList = document.createElement("span");
   myTaskList.innerText = string;
   myTaskContainer.appendChild(myTaskList)
@@ -134,3 +136,12 @@ taskList('cozinhar');
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
 
 
+function addSubtitleTask(string) {
+  const subtitleTask = document.createElement('div')
+  subtitleTask.classList.add('task')
+  subtitleTask.style.backgroundColor = string;
+  myTaskContainer.appendChild(subtitleTask);
+
+}
+
+addSubtitleTask('blue');
