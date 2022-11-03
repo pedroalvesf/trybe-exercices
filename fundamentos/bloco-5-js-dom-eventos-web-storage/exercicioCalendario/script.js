@@ -34,13 +34,13 @@ const createDaysOfTheWeek = () => {
         daysUlList.appendChild(days);
 
         if(decemberDays == 24 || decemberDays == 31){
-          days.className = 'day holiday'
+          days.className = 'days holiday'
           daysUlList.append(days);
         }else if(decemberDays == 4 || decemberDays == 11 || decemberDays == 18){
-          days.className = 'day friday'
+          days.className = 'days friday'
           daysUlList.append(days);
         }else if(decemberDays == 25){
-          days.className = 'day friday holiday'
+          days.className = 'days friday holiday'
           daysUlList.append(days);
         }else{
           days.className = 'days';
@@ -194,8 +194,8 @@ function dateSelector(){
   let dateSelectButton = document.querySelectorAll('.days')[index];
   dateSelectButton.addEventListener('click', () =>{
     console.log(dateSelectButton);
-    // dateSelectButton.style.backgroundColor = 'blue';
-    dateSelectButton.classList.toggle('color')
+    dateSelectButton.style.color = 'blue';
+    // dateSelectButton.classList.toggle('color')
   })
 }}
 dateSelector();
@@ -204,45 +204,44 @@ dateSelector();
 // Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”;
 // Ao pressionar a tecla “enter” o evento também deverá ser disparado.
 
-let taskInputText = document.querySelector('#task-input');
+// let taskInputText = document.querySelector('#task-input');
 let taskListC = document.querySelector('.task-list')
 let addCommitmentButton = document.querySelector('#btn-add')
-let validateInput = () => taskInputText.value.trim().length > 0;
-//   function createCommitments(text){
-//     let commitmentsList = document.createElement('li')
-//     commitmentsList.innerText = text
-//     taskListC.appendChild(commitmentsList)
-//   }
+  function createCommitments(text){
+    let commitmentsList = document.createElement('p')
+    commitmentsList.innerText = text
+    taskListC.appendChild(commitmentsList)
+  }
 
-// function addCommitment(){
-//   const commitmentInput = taskInputText.value;
-//   addCommitmentButton.addEventListener('click', () =>{
-//     if(validateInput() > 0 ){
-//       console.log(taskInputText.value);
-//       createCommitments(commitmentInput)
-//     }else{
-//       alert('vacilo')
-//     }
-//   })
- 
-// }
-
-// addCommitment();
-
-//forma do gabarito abaixo 
-const addCommitmentGabarito = () => {
-  addCommitmentButton.addEventListener('click', () => {
-    if(validateInput() > 0){
-      let newCommitment = document.createElement('li');
-      newCommitment.innerText = taskInputText.value();
-      taskListC.appendChild(newCommitment);
+function addCommitment(){
+    addCommitmentButton.addEventListener('click', () =>{
+    let taskInputText = document.querySelector('#task-input');
+    const commitmentInput = taskInputText.value;
+    if(commitmentInput.length  > 0){
+      console.log(taskInputText.value);
+      createCommitments(taskInputText.value)
       taskInputText.value = '';
     }else{
-      alert('Error')
+      alert('vacilo')
     }
-  });
+  })
 }
-addCommitmentGabarito();
+addCommitment();
+
+//forma do gabarito abaixo 
+// const addCommitmentGabarito = () => {
+//   addCommitmentButton.addEventListener('click', () => {
+//     if(validateInput() > 0){
+//       let newCommitment = document.createElement('p');
+//       newCommitment.innerText = taskInputText.value;
+//       taskListC.appendChild(newCommitment);
+//       taskInputText.value = '';
+//     }else{
+//       alert('Error')
+//     }
+//   });
+// }
+// addCommitmentGabarito();
 
   // getInputField.addEventListener('keyup', (event) => {
   //   if (event.key === 'Enter' && getInputField.value.length > 0) {
