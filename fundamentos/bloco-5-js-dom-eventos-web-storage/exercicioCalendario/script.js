@@ -254,4 +254,23 @@ addCommitment();
 
 
 
+function gerarCelulas(){
+  //ver quantas celulas sao necessarias 
+  //como criar as celulas 
+  //para onde elas vao 
+  //adicionar classes 
+  //adicionar evento 
 
+  for(let index = 0; index < 9; index++){
+    let celula = document.createElement('div');
+    celula.setAttribute("id", index);
+    celular.classList.add('celula');
+    celula.addEventListener('click', jogar);
+    grade.appendChild(celular);
+  }
+}
+gerarCelulas();
+
+function jogar(event){
+  console.log('elemento', event.target);
+}
