@@ -153,27 +153,15 @@ function taskSelector() {
     console.log(selectButton);
     selectButton.classList.toggle('selected');
   })
-
-
 }
 taskSelector();
-  // const selectedTask = (event.target)
-  // taskClassRemove();
-  // event.target.classList.toggle('selected')
-  //.classList.toggle('selected');
-  // selectedTask.addEventListener('click', () => {
-  //   event.target.classList.toggle('selected');
-  // })
-  
-// function divSelected(element){
-//   element.classList.toggle('selected')
-// }
-// divSelected();
 
-// function taskClassRemove(){
-//   for(let i = 0; i < taskList.length; i += 1){
-//     if(taskList[i].classList.contains('selected')){
-//       taskList[i].classList.remove('selected')
-//     }
-// }
-// }
+//Implemente uma função que atribua a cor da tarefa ao dia do calendário;
+//Adicione um evento que, ao clicar em um dia do mês no calendário, 
+//atribua a esse dia a cor da legenda da sua tarefa selecionada;
+//Ao clicar novamente no dia com a cor da legenda, a sua cor deverá 
+//voltar à configuração inicial rgb(119,119,119).
+
+function dateSelector(){
+  let dateSelectButton = document.querySelector('');
+}
