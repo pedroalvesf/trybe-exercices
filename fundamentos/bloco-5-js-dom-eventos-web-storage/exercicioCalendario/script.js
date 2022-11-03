@@ -269,7 +269,7 @@ function gerarCelulas(){
     grade.appendChild(celular);
   }
 }
-gerarCelulas();
+// gerarCelulas();
 
 function jogar(event){
   console.log('elemento', event.target);
