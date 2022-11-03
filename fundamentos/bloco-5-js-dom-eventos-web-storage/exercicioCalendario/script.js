@@ -158,18 +158,16 @@ addSubtitleTask();
 
 const dayMouseOver = () =>{
   daysUlList.addEventListener('mouseover', (event) =>{
-    console.log(event)
   event.target.style.fontSiza = '30px';
   event.target.style.fontWeight = '600';
-  })
+  });
 }
 
 const dayMouseOut = () =>{
   daysUlList.addEventListener('mouseout', (event) =>{
-    console.log(event)
   event.target.style.fontSiza = '20px';
   event.target.style.fontWeight = '200';
-  })
+  });
 }
 dayMouseOver();
 dayMouseOut();
@@ -193,16 +191,16 @@ taskSelector();
 //Ao clicar novamente no dia com a cor da legenda, a sua cor deverá 
 //voltar à configuração inicial rgb(119,119,119).
 
-// function dateSelector(){
-//   for(let index = 0; index < decemberDaysList.length; index++){
-//   let dateSelectButton = document.querySelectorAll('.days')[index];
-//   dateSelectButton.addEventListener('click', () =>{
-//     console.log(dateSelectButton);
-//     // dateSelectButton.style.backgroundColor = 'blue';
-//     dateSelectButton.classList.toggle('color')
-//   })
-// }}
-// dateSelector();
+function dateSelector(){
+  for(let index = 0; index < decemberDaysList.length; index++){
+  let dateSelectButton = document.querySelectorAll('.days')[index];
+  dateSelectButton.addEventListener('click', () =>{
+    console.log(dateSelectButton);
+    // dateSelectButton.style.backgroundColor = 'blue';
+    dateSelectButton.classList.toggle('color')
+  })
+}}
+dateSelector();
 
 // Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto “COMPROMISSOS”, adiciona o item à lista “MEUS COMPROMISSOS” ao clicar no botão “ADICIONAR”;
 // Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”;
@@ -213,42 +211,42 @@ let taskListC = document.querySelector('.task-list')
 let addCommitmentButton = document.querySelector('#btn-add')
 let validateInput = () => taskInputText.value.trim().length > 0;
 
-  function createCommitments(text){
-    let commitmentsList = document.createElement('li')
-    commitmentsList.innerText = text
-    taskListC.appendChild(commitmentsList)
-  }
+//   function createCommitments(text){
+//     let commitmentsList = document.createElement('li')
+//     commitmentsList.innerText = text
+//     taskListC.appendChild(commitmentsList)
+//   }
 
-function addCommitment(){
-  const commitmentInput = taskInputText.value;
-  addCommitmentButton.addEventListener('click', () =>{
-    if(validateInput() > 0 ){
-      console.log(taskInputText.value);
-      createCommitments(commitmentInput)
-    }else{
-      alert('vacilo')
-    }
-  })
+// function addCommitment(){
+//   const commitmentInput = taskInputText.value;
+//   addCommitmentButton.addEventListener('click', () =>{
+//     if(validateInput() > 0 ){
+//       console.log(taskInputText.value);
+//       createCommitments(commitmentInput)
+//     }else{
+//       alert('vacilo')
+//     }
+//   })
  
-}
+// }
 
-addCommitment();
+// addCommitment();
 
 //forma do gabarito abaixo 
 
-// const addCommitmentGabarito = () => {
-//   addCommitmentButton.addEventListener('click', () => {
-//     if(validateInput() > 0){
-//       let newCommitment = document.createElement('li');
-//       newCommitment.innerText = taskInputText.value;
-//       taskListC.appendChild(newCommitment);
-//       taskInputText.value = '';
-//     }else{
-//       alert('Error')
-//     }
-//   });
-// }
-// addCommitmentGabarito();
+const addCommitmentGabarito = () => {
+  addCommitmentButton.addEventListener('click', () => {
+    if(validateInput() > 0){
+      let newCommitment = document.createElement('li');
+      newCommitment.innerText = taskInputText.value;
+      taskListC.appendChild(newCommitment);
+      taskInputText.value = '';
+    }else{
+      alert('Error')
+    }
+  });
+}
+addCommitmentGabarito();
 
   // getInputField.addEventListener('keyup', (event) => {
   //   if (event.key === 'Enter' && getInputField.value.length > 0) {
