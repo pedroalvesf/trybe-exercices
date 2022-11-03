@@ -141,7 +141,18 @@ function addSubtitleTask(string) {
 
 }
 
-addSubtitleTask('blue');
+// addSubtitleTask('blue');
+//alterando fucao acima para ter uma cor dinamica e nao passada dentro de funcao, a cor podera vir pelo css 
+
+function addSubtitleTaskWithCss(){
+  const subtitleTask = document.createElement('div')
+  subtitleTask.classList.add('task color')
+  // subtitleTask.style.backgroundColor = string;
+  myTaskContainer.appendChild(subtitleTask);
+
+}
+
+addSubtitleTask();
 
 // Implemente uma função que selecione uma tarefa;
 // Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada;
@@ -152,6 +163,7 @@ function taskSelector() {
   selectButton.addEventListener('click', () =>{
     console.log(selectButton);
     selectButton.classList.toggle('selected');
+    selectButton.classList.toggle('color');
   })
 }
 taskSelector();
@@ -163,5 +175,12 @@ taskSelector();
 //voltar à configuração inicial rgb(119,119,119).
 
 function dateSelector(){
-  let dateSelectButton = document.querySelector('');
-}
+  for(let index = 0; index < decemberDaysList.length; index++){
+  let dateSelectButton = document.querySelectorAll('.days')[index];
+  dateSelectButton.addEventListener('click', () =>{
+    console.log(dateSelectButton);
+    // dateSelectButton.style.backgroundColor = 'blue';
+    dateSelectButton.classList.toggle('color')
+  })
+}}
+dateSelector();
