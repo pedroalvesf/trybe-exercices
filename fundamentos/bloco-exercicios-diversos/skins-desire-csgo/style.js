@@ -27,9 +27,10 @@ const handleAddSkin = () => {
         newSkin.innerText = skinTextInput.value;
         containerSkin.appendChild(newSkin);
         skinTextInput.value = '';
+        createDivButtons(newSkin)
 
-        createRemoveButton(newSkin);
         removeSkin();
+        changeSkinColor();
 
     }
 }
@@ -42,19 +43,26 @@ const handleInputChange = () => {
         return skinTextInput.classList.remove("error")
     }
 };
+function createDivButtons(newSkin) {
+    const buttonsContainer = document.createElement('div');
+    buttonsContainer.className = 'buttons-container'
+    newSkin.appendChild(buttonsContainer)
+    createBoughtButton(buttonsContainer)
+    createRemoveButton(buttonsContainer)
 
-function createRemoveButton(newSkin) {
+}
+function createRemoveButton(buttonsContainer) {
     const newSkinRemove = document.createElement('button');
     newSkinRemove.className = 'skin-item-remove-button';
     newSkinRemove.innerHTML = 'Remove';
-    newSkin.appendChild(newSkinRemove);
+    buttonsContainer.appendChild(newSkinRemove);
 }
 
 const removeSkin = () => {
     const removeButton = document.querySelectorAll('.skin-item-remove-button');
     for (let index = 0; index < removeButton.length; index++) {
         removeButton[index].addEventListener('click', (event) => {
-            event.target.parentNode.remove();
+            event.target.parentNode.parentNode.remove();
         })
     }
 }
@@ -72,12 +80,29 @@ createRemoveAll();
 function removeAll() {
     const removeAllButton = document.querySelector('.remove-all-button')
     const containerSkin = document.querySelector('.skin-list-container');
-        removeAllButton.addEventListener('click', () => { 
+    removeAllButton.addEventListener('click', () => {
         containerSkin.innerHTML = ''
 
     })
 }
 removeAll();
+
+function createBoughtButton(buttonsContainer) {
+    const boughtButton = document.createElement('button');
+    boughtButton.className = 'bought-skin-button';
+    boughtButton.innerHTML = 'BS'
+    buttonsContainer.appendChild(boughtButton)
+}
+
+const changeSkinColor = () => {
+    const callBsButton = document.querySelectorAll('.bought-skin-button');
+    for (let index = 0; index < callBsButton.length; index++) {
+        callBsButton[index].addEventListener('click', (event) => {
+            event.target.parentNode.parentNode.classList.toggle('positivo');
+        })
+    }
+}
+
 
 // event.target.document.getElementsByClassName('skin-list-container').reset();
 // })

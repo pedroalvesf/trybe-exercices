@@ -42,7 +42,11 @@ body {
     width: 15%;
     justify-content: auto;
 }
+.buttons-container{
+    display: flex;
+    justify-content: right;
 
+}
 .skin-list-container {
     background-color: white;
     margin-top: 10px;
@@ -71,6 +75,14 @@ body {
 
 .skin-item-remove-button{
     
+}
+.bought-skin-button{
+
+}
+
+.positivo{
+    background-color: green;
+    color: blue;
 }
 
 /* Utilities*/
