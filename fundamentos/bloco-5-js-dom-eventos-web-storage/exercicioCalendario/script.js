@@ -194,8 +194,8 @@ function dateSelector(){
   let dateSelectButton = document.querySelectorAll('.days')[index];
   dateSelectButton.addEventListener('click', () =>{
     console.log(dateSelectButton);
-    dateSelectButton.style.color = 'blue';
-    // dateSelectButton.classList.toggle('color')
+    // dateSelectButton.style.color = 'blue';
+    dateSelectButton.classList.toggle('color')
   })
 }}
 dateSelector();
@@ -214,7 +214,7 @@ let addCommitmentButton = document.querySelector('#btn-add')
   }
 
 function addCommitment(){
-    addCommitmentButton.addEventListener('click', () =>{
+  addCommitmentButton.addEventListener('click', () =>{
     let taskInputText = document.querySelector('#task-input');
     const commitmentInput = taskInputText.value;
     if(commitmentInput.length  > 0){
