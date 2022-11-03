@@ -154,6 +154,25 @@ function addSubtitleTaskWithCss(){
 
 addSubtitleTask();
 
+
+
+const dayMouseOver = () =>{
+  daysUlList.addEventListener('mouseover', (event) =>{
+    console.log(event)
+  event.target.style.fontSiza = '30px';
+  event.target.style.fontWeight = '600';
+  })
+}
+
+const dayMouseOut = () =>{
+  daysUlList.addEventListener('mouseout', (event) =>{
+    console.log(event)
+  event.target.style.fontSiza = '20px';
+  event.target.style.fontWeight = '200';
+  })
+}
+dayMouseOver();
+dayMouseOut();
 // Implemente uma função que selecione uma tarefa;
 // Adicione um evento que ao clicar no elemento com a tag <div> referente à cor da sua tarefa, atribua a esse elemento a classe task selected, ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada;
 // Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task, ou seja, essa tarefa está deixando de ser uma tarefa selecionada.
