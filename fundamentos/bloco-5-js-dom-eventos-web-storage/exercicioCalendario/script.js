@@ -184,3 +184,24 @@ function dateSelector(){
   })
 }}
 dateSelector();
+
+// Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto “COMPROMISSOS”, adiciona o item à lista “MEUS COMPROMISSOS” ao clicar no botão “ADICIONAR”;
+// Se nenhum caractere for inserido no campo input, a função deve retornar um alert com uma mensagem de erro ao clicar em “ADICIONAR”;
+// Ao pressionar a tecla “enter” o evento também deverá ser disparado.
+
+// function createLi(text){
+//   let li = document.createElement('li');
+//   li.classList.add('task');
+//   li.innerText = text;
+//   taskList.appendChild(li)
+// }
+
+// function addTask(){
+//   const liTextContent = inputTask.value;
+//   if(liTextContent.length > 0){
+//       createLi(liTextContent)
+//       addEventInLis();
+//   } else{
+//       alert('DIGITA ALGUMA COISA AI PÔ')
+//   }
+// }
