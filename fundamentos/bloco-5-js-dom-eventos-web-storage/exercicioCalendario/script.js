@@ -154,8 +154,6 @@ function addSubtitleTaskWithCss(){
 
 addSubtitleTask();
 
-
-
 const dayMouseOver = () =>{
   daysUlList.addEventListener('mouseover', (event) =>{
   event.target.style.fontSiza = '30px';
@@ -210,7 +208,6 @@ let taskInputText = document.querySelector('#task-input');
 let taskListC = document.querySelector('.task-list')
 let addCommitmentButton = document.querySelector('#btn-add')
 let validateInput = () => taskInputText.value.trim().length > 0;
-
 //   function createCommitments(text){
 //     let commitmentsList = document.createElement('li')
 //     commitmentsList.innerText = text
@@ -233,12 +230,11 @@ let validateInput = () => taskInputText.value.trim().length > 0;
 // addCommitment();
 
 //forma do gabarito abaixo 
-
 const addCommitmentGabarito = () => {
   addCommitmentButton.addEventListener('click', () => {
     if(validateInput() > 0){
       let newCommitment = document.createElement('li');
-      newCommitment.innerText = taskInputText.value;
+      newCommitment.innerText = taskInputText.value();
       taskListC.appendChild(newCommitment);
       taskInputText.value = '';
     }else{
