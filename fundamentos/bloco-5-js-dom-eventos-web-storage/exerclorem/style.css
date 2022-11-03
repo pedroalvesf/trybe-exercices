@@ -17,3 +17,51 @@ button{
     align-items: center;
     padding-top: 50px;
 }
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: black;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.whiteF{
+    color: white;
+}
+
+.blackF{
+    color: black;
+}
+
+.redF{
+    color: red;
+}
+
+.FS8{
+    font-size: 8px;
+}
+.FS10{
+    font-size: 10px;
+}
+.FS12{
+    font-size: 12px;
+}
+.FS14{
+    font-size: 14px;
+}
+.FS20{
+    font-size: 20px;
+}
