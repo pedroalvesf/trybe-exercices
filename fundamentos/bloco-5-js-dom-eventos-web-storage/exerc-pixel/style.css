@@ -28,7 +28,7 @@ body {
     height: 30px;
     display: table-cell;
 }
-.container-colors{
+.color-palette{
     display: flex;
     flex-direction: row;
     align-items: center;

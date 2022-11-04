@@ -17,8 +17,13 @@ function createPixel(){
 }
 createPixel();
 
+function changeColors(){
+    btnChangeColors.addEventListener('click', (event) =>{
+        event.target.newColors()
+    })
+}
 
-function newColors() {
+function newColors(event) {
     let r = Math.random() * 255;
     let g = Math.random() * 255;
     let b = Math.random() * 255;
@@ -26,6 +31,15 @@ function newColors() {
     return `rgb(${r}, ${g}, ${b})`;
  }
  newColors();
+
+ //ul.addEventListener('mouseover', (event) =>{
+ // event.target.classlist.add('mouseOver')
+ //})
+//function mouveOver(){
+//  ul.addEventListener('mouseover', (event) =>{
+//  event.target.classlist.add('mouseOver')
+//}
+//mouseOver()
 // function changeSize(){
 //     btnChangeSize.addEventListener('click', () =>{
 //         for(let index = 0; index < pixelSize.value; index++){
