@@ -23,11 +23,10 @@ function changeColors(){
     })
 }
 
-function newColors(event) {
-    let r = Math.random() * 255;
+function newColors() {
+    let r = Math.floor(Math.random() * 255);
     let g = Math.random() * 255;
     let b = Math.random() * 255;
- 
     return `rgb(${r}, ${g}, ${b})`;
  }
  newColors();

@@ -22,12 +22,7 @@ body {
     width: 40px;
     text-align: center;
 }
-.pixelCel{
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-    display: table-cell;
-}
+
 .color-palette{
     display: flex;
     flex-direction: row;
@@ -49,11 +44,22 @@ body {
     background-color: red;
 }
 .third {
-    background-color: newColors();
+    background-color: ;
 }
 .fourth{
     background-color: rgb(#a13,100,100);
 }
 .fifth{
     background-color: purple;
+}
+
+.container-pixel {
+    display: grid;
+}
+
+.pixelCel{
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    display: table-cell;
 }
