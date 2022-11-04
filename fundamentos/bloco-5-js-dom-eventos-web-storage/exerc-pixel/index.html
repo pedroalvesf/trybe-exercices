@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Pixel Art</title>
 </head>
 <body>
-    
+    <header class="container-header">
+        <h1 class="title">Pixel Art</h1>
+    </header>
+    <main class="container-main">
+        <div class="option">
+            <button class ="btn-erase">Erase</button>
+            <input type="number" value="16" class="size">
+            <button class="btn-size">Size</button>
+        </div>
+        <div class="container-colors">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <table class="container-pixel">
+            <!-- <canvas width="450" height="450" id="canvas"></canvas> -->
+        </table>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
