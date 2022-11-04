@@ -7,6 +7,9 @@ body {
     /* justify-content: center; */
     align-items: center;
 }
+.container-main{
+    display: inline-block;
+}
 
 .options{
     display: flex;
@@ -19,31 +22,38 @@ body {
     width: 40px;
     text-align: center;
 }
-
-.container-pixel{
-    border-spacing: 0;
-    display: table;
-    margin-top: 50px;
-}
-
 .pixelCel{
     border: 1px solid black;
     width: 30px;
     height: 30px;
     display: table-cell;
-
 }
-
-.container-color{
-
-    width: 100px;
-    height: 100px;
-    background-color: red;
+.container-colors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: 2px solid black;
+    margin: 2px;
 }
 .color {
-    width: 20px;
-    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.first{
+    background-color: black;
+}
+.second{
     background-color: red;
-
+}
+.third {
+    background-color: newColors();
+}
+.fourth{
+    background-color: rgb(#a13,100,100);
+}
+.fifth{
+    background-color: purple;
 }
