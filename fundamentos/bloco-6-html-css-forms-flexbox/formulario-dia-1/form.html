@@ -17,14 +17,14 @@
         <h1 id="title">Formulario TrybeTrip</h1>
         <form action="submit" method="get" id="form">
             <div class="container name">
-            <label for="name-complete">Nome: </label>
-            <input id="complete-name" type="text" autocomplete="off" name="name" value="" minlength="10"
-                placeholder="Insira seu nome" maxlength="40"><br>
+                <label for="name-complete">Nome: </label>
+                <input id="complete-name" type="text" autocomplete="off" name="name" value="" minlength="10"
+                    placeholder="Insira seu nome" maxlength="40"><br>
             </div>
             <div class="container email">
-            <label for="e-mail">E-mail: </label>
-            <input id="Email" type="email" autocomplete="off" name="e-mail" value="" minlength="10"
-                placeholder="Insira seu e-mail" maxlength="60"><br>
+                <label for="e-mail">E-mail: </label>
+                <input id="Email" type="email" autocomplete="off" name="e-mail" value="" minlength="10"
+                    placeholder="Insira seu e-mail" maxlength="60"><br>
             </div>
             <div>
                 <input name="dest" id="destination" type="radio">
@@ -37,14 +37,18 @@
                 <label for="destination">Montanhas</label>
             </div>
             <label for="sobre-voce">Porque voce deveria ganhar o concurso?<br>
-            <textarea name="sobre-voce" id="sobre-voce" cols="80" rows="4"></textarea> </label>
-            <label for="date">Data: </label>
-            <input type="date">
-            <div>
-                <label>Concordo 1</label>
-
-                <label>Concordo 1</label>
+                <textarea name="sobre-voce" id="sobre-voce" cols="50" rows="4"></textarea> </label>
+            <div class="container-date">
+                <label for="date">Data: </label>
+                <input type="date">
             </div>
+            <div class="container-promocao">
+                <label for="promocoes"><input type="checkbox" name="promocoes" id="promocoes"> Promocoes oferecidas pela
+                    trybe </label><br>
+                <label for="promocoes"><input type="checkbox" name="promocoes" id="promocoes"> Promocoes oferecidas pela
+                    trybe </label>
+            </div>
+            <button type="submit">Enviar</button>
     </div>
     </form>
 
