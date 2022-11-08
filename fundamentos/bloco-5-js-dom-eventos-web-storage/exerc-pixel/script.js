@@ -13,6 +13,8 @@ function createPixel() {
             let pixelCel = document.createElement('div');
             pixelCel.setAttribute("class", "pixelCel");
             pixelCelContainer.appendChild(pixelCel);
+
+            // eraseColors();
         }
     })
 }
@@ -32,14 +34,40 @@ function newColors() {
 }
 newColors();
 
-function eraseColor(pixelCel) {
-    btnErase.addEventListener('click', () => {
-        for (let index = 0; index < pixelCel.length; index++) {
-            pixelCel[index].style.backgroundColor('white')
-        }
+// const eraseColors = () =>{
+//     btnErase.addEventListener('click', (event)=>{
+//     const divPixel = document.querySelector(".pixelCel")
+//     for (let index = 0; index < divPixel.length; index++) {
+//         event.divPixel[index].style.backgroundColor('white')
+//         }
+//     })
+// }
+
+const eraseColors2 = () =>{
+    const pixelCelContainer = document.querySelector(".container-pixel");
+    btnErase.addEventListener('click', ()=>{
+        pixelCelContainer.children.style.backgroundColor = 'white';
     })
 }
-eraseColor();
+eraseColors2();
+
+// const eraseColors3 = () =>{
+//     const pixelCel = document.querySelectorAll(".pixelCel")[0];
+//     btnErase.addEventListener('click', ()=>{
+//         pixelCel.style.backgroundColor.remove()
+//     })
+// }
+// eraseColors3();
+
+
+// function eraseColor(pixelCel) {
+//     btnErase.addEventListener('click', () => {
+//         for (let index = 0; index < pixelCel.length; index++) {
+//             pixelCel[index].style.backgroundColor('white')
+//         }
+//     })
+// }
+// eraseColor();
 
  //ul.addEventListener('mouseover', (event) =>{
  // event.target.classlist.add('mouseOver')
