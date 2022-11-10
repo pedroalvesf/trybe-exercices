@@ -4,42 +4,37 @@ let skinLisTest = [
     { skinName: "M4A41-S Pritstream" },
 ];
 
-
 const skinTextInput = document.querySelector('.skin-text-input'); //texto
 const addSkinButton = document.querySelector('.new-skin-button'); // button
 const containerSkin = document.querySelector('.skin-list-container');
 const containerMain = document.querySelector('.container-main');
 
-
 const validateInput = () => skinTextInput.value.trim().length > 0;
 const validateInputNeutral = () => skinTextInput.value.trim().length == 0;
-
-
+const removeAllButton = document.querySelector('.remove-all-button')
 const handleAddSkin = () => {
     // alert('Botao apertado')
     const inputIsValid = validateInput();
     if (!inputIsValid) {
         skinTextInput.classList.add("error");
         alert('invalid')
-        //skinTextInput.innerHTML.add("invalid value"); como adicionar texto ao erro
     } else {
+        const removeAllButton = document.querySelector(".remove-all-button")
         const newSkin = document.createElement('div');
         newSkin.className = 'skin-item';
         newSkin.innerText = skinTextInput.value;
         containerSkin.appendChild(newSkin);
         skinTextInput.value = '';
         createDivButtons(newSkin)
-
         removeSkin();
         changeSkinColor();
-
+        containerSkin.hidden = false
+        removeAllButton.hidden = false;
     }
 }
-
 const handleInputChange = () => {
     const inputIsValid = validateInput();
     const inputIsNeutral = validateInputNeutral();
-
     if (inputIsValid || inputIsNeutral) {
         return skinTextInput.classList.remove("error")
     }
@@ -50,7 +45,6 @@ function createDivButtons(newSkin) {
     newSkin.appendChild(buttonsContainer)
     createBoughtButton(buttonsContainer)
     createRemoveButton(buttonsContainer)
-
 }
 function createRemoveButton(buttonsContainer) {
     const newSkinRemove = document.createElement('button');
@@ -74,23 +68,22 @@ function createRemoveAll() {
     removeAllButton.innerHTML = 'Clean All';
     containerMain.appendChild(removeAllButton);
 
-
 }
-createRemoveAll();
 
 function removeAll() {
     const removeAllButton = document.querySelector('.remove-all-button')
     const containerSkin = document.querySelector('.skin-list-container');
     removeAllButton.addEventListener('click', () => {
         containerSkin.innerHTML = ''
-
+        containerSkin.hidden = true
+        removeAllButton.hidden = true;
     })
 }
-removeAll();
 
 function createBoughtButton(buttonsContainer) {
     const boughtButton = document.createElement('button');
     boughtButton.className = 'bought-skin-button';
+    boughtButton.classList.add = "btn-success"
     boughtButton.innerHTML = 'BS'
     buttonsContainer.appendChild(boughtButton)
 }
@@ -104,15 +97,10 @@ const changeSkinColor = () => {
     }
 }
 
-
-// event.target.document.getElementsByClassName('skin-list-container').reset();
-// })
-// document.getElementsByClassName('skin-list-container').reset();
+createRemoveAll();
+removeAll();
 addSkinButton.addEventListener("click", handleAddSkin);
-//addSkinButton.addEventListener("click", () => handleAddSkin());
 skinTextInput.addEventListener("change", () => handleInputChange());
-
-
 
 
 //const alvo = (evento) => {

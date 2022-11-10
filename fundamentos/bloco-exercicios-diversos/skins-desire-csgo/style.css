@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     padding: 0;
@@ -37,7 +36,7 @@ body {
     width: 80%;
     justify-content: auto;
     font-weight: 500;
- }
+}
 .new-skin-button{
     width: 15%;
     justify-content: auto;
@@ -45,8 +44,8 @@ body {
 .buttons-container{
     display: flex;
     justify-content: right;
-
 }
+
 .skin-list-container {
     background-color: white;
     margin-top: 10px;
@@ -57,7 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
 .skin-item{
@@ -69,8 +67,6 @@ body {
     margin-top: 0.5px;
     margin-bottom: 0.5px;
     display: flex;
-
-
 }
 
 .skin-item-remove-button{
@@ -92,5 +88,4 @@ body {
 
 .error::placeholder{
     color: red;
-    
 }
