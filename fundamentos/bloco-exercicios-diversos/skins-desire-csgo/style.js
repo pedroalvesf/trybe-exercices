@@ -8,10 +8,12 @@ const skinTextInput = document.querySelector('.skin-text-input'); //texto
 const addSkinButton = document.querySelector('.new-skin-button'); // button
 const containerSkin = document.querySelector('.skin-list-container');
 const containerMain = document.querySelector('.container-main');
-
 const validateInput = () => skinTextInput.value.trim().length > 0;
 const validateInputNeutral = () => skinTextInput.value.trim().length == 0;
-const removeAllButton = document.querySelector('.remove-all-button')
+const removeAllButton = document.querySelector('.remove-all-button');
+const buttonsContainer = document.querySelector(".buttons-container");
+const newSkin = document.querySelector(".skin-item");
+
 const handleAddSkin = () => {
     // alert('Botao apertado')
     const inputIsValid = validateInput();
@@ -19,19 +21,22 @@ const handleAddSkin = () => {
         skinTextInput.classList.add("error");
         alert('invalid')
     } else {
-        const removeAllButton = document.querySelector(".remove-all-button")
         const newSkin = document.createElement('div');
-        newSkin.className = 'skin-item';
+        newSkin.className = 'skin-item'
         newSkin.innerText = skinTextInput.value;
+        containerSkin.style.padding = '30px 20px';
         containerSkin.appendChild(newSkin);
         skinTextInput.value = '';
+        containerSkin.hidden = false;
+
         createDivButtons(newSkin)
         removeSkin();
         changeSkinColor();
-        containerSkin.hidden = false
-        removeAllButton.hidden = false;
+        createRemoveAll()
+
     }
 }
+
 const handleInputChange = () => {
     const inputIsValid = validateInput();
     const inputIsNeutral = validateInputNeutral();
@@ -46,6 +51,7 @@ function createDivButtons(newSkin) {
     createBoughtButton(buttonsContainer)
     createRemoveButton(buttonsContainer)
 }
+
 function createRemoveButton(buttonsContainer) {
     const newSkinRemove = document.createElement('button');
     newSkinRemove.className = 'skin-item-remove-button';
@@ -62,23 +68,44 @@ const removeSkin = () => {
     }
 }
 
+// function removeAllAction(removeAllButton){ //differente way to do the function  
+// removeAllButton.addEventListener('click', () => {
+//     const removeAllButton = document.querySelector(".remove-all-button")
+//     const containerSkin = document.querySelector('.skin-list-container');
+//     containerSkin.innerHTML = ''
+//     containerSkin.hidden = true;
+//     removeAllButton.remove();
+//     })
+// }
+// function createRemoveAll() { //differente way to do the function 
+//     const removeAllButton = document.querySelector(".remove-all-button")
+//     if(!removeAllButton){
+//         const removeAllButton = document.createElement('button');
+//         removeAllButton.className = 'remove-all-button';
+//         removeAllButton.innerHTML = 'Clean All';
+//         containerMain.appendChild(removeAllButton);
+
+//         removeAllAction()
+//     }
+// }
+
 function createRemoveAll() {
-    const removeAllButton = document.createElement('button');
-    removeAllButton.className = 'remove-all-button';
-    removeAllButton.innerHTML = 'Clean All';
-    containerMain.appendChild(removeAllButton);
-
-}
-
-function removeAll() {
-    const removeAllButton = document.querySelector('.remove-all-button')
-    const containerSkin = document.querySelector('.skin-list-container');
-    removeAllButton.addEventListener('click', () => {
+    const removeAllButton = document.querySelector(".remove-all-button")
+    if(!removeAllButton){
+        const removeAllButton = document.createElement('button');
+        removeAllButton.className = 'remove-all-button';
+        removeAllButton.innerHTML = 'Clean All';
+        containerMain.appendChild(removeAllButton);
+        removeAllButton.addEventListener('click', () => {
+        const containerSkin = document.querySelector('.skin-list-container');
         containerSkin.innerHTML = ''
-        containerSkin.hidden = true
-        removeAllButton.hidden = true;
-    })
+        containerSkin.hidden = true;
+        removeAllButton.remove();
+        })
+    }
 }
+
+
 
 function createBoughtButton(buttonsContainer) {
     const boughtButton = document.createElement('button');
@@ -97,18 +124,11 @@ const changeSkinColor = () => {
     }
 }
 
-createRemoveAll();
-removeAll();
+
+
 addSkinButton.addEventListener("click", handleAddSkin);
 skinTextInput.addEventListener("change", () => handleInputChange());
 
-
-//const alvo = (evento) => {
-//     console.log(evento.target)
-//  let corClicada = evento.target.className;
-//  let aplicaCor = document.querySelector('body');
-//  aplicarCord.className = corClicada;
-//}
 
 //const darkMode = document.querySelector('.apply-dark-mode');
 //darMode.addEventListener('click', alvo);
