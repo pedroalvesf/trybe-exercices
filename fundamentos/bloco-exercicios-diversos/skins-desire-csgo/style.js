@@ -10,6 +10,7 @@ const addSkinButton = document.querySelector('.new-skin-button'); // button
 const containerSkin = document.querySelector('.skin-list-container');
 const containerMain = document.querySelector('.container-main');
 
+
 const validateInput = () => skinTextInput.value.trim().length > 0;
 const validateInputNeutral = () => skinTextInput.value.trim().length == 0;
 
