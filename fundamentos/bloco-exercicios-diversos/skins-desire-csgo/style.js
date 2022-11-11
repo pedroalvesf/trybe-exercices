@@ -16,6 +16,7 @@ const newSkin = document.querySelector(".skin-item");
 const skinBtnContainer = document.querySelector(".skin-btn-container")
 const saveListBtn = document.querySelector(".btn-save")
 
+
 const handleAddSkin = () => {
     // alert('Botao apertado')
     const inputIsValid = validateInput();
@@ -30,7 +31,6 @@ const handleAddSkin = () => {
         containerSkin.appendChild(newSkin);
         skinTextInput.value = '';
         containerSkin.hidden = false;
-
         createDivButtons(newSkin);
         removeSkin();
         changeSkinColor();
@@ -79,7 +79,6 @@ function createSaveBtn(){
         saveListBtn.innerHTML = "Save";
         saveListBtn.classList.add = "btn-success"
         skinBtnContainer.appendChild(saveListBtn);
-
         saveListBtn.addEventListener('click', () =>{
         })
     }
@@ -89,7 +88,6 @@ function createRemoveAll() {
     const removeAllButton = document.querySelector(".remove-all-button")
     if(!removeAllButton){
         const removeAllButton = document.createElement('button');
-        
         removeAllButton.className = 'remove-all-button';
         removeAllButton.innerHTML = 'Clean All';
         skinBtnContainer.appendChild(removeAllButton);
@@ -100,7 +98,6 @@ function createRemoveAll() {
         containerSkin.hidden = true;
         removeAllButton.remove();
         saveListBtn.remove();
-
 
         })
     }
@@ -123,7 +120,6 @@ const changeSkinColor = () => {
         })
     }
 }
-
 addSkinButton.addEventListener("click", handleAddSkin);
 skinTextInput.addEventListener("change", () => handleInputChange());
 
