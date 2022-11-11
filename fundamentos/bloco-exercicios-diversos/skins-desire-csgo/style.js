@@ -77,6 +77,7 @@ function createSaveBtn(){
         const saveListBtn = document.createElement('button');
         saveListBtn.className = "btn-save";
         saveListBtn.innerHTML = "Save";
+        saveListBtn.classList.add = "btn-success"
         skinBtnContainer.appendChild(saveListBtn);
 
         saveListBtn.addEventListener('click', () =>{
