@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="/formulario-dia-1/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -14,16 +16,16 @@
 
     </header>
     <div class="container-main">
-        <h1 id="title">Formulario TrybeTrip</h1>
+        <h1 id="title" class="display-4 text-muted">Formulario TrybeTrip</h1>
         <form action="submit" method="get" id="form">
             <div class="container name">
                 <label for="name-complete">Nome: </label>
-                <input id="complete-name" type="text" autocomplete="off" name="name" value="" minlength="10"
+                <input class="form-control"id="complete-name" type="text" autocomplete="off" name="name" value="" minlength="10"
                     placeholder="Insira seu nome" maxlength="40"><br>
             </div>
             <div class="container email">
-                <label for="e-mail">E-mail: </label>
-                <input id="Email" type="email" autocomplete="off" name="e-mail" value="" minlength="10"
+                <label for="e-mail">Email: </label>
+                <input class="form-control" id="Email" type="email" autocomplete="off" name="e-mail" value="" minlength="10"
                     placeholder="Insira seu e-mail" maxlength="60"><br>
             </div>
             <div>
@@ -37,7 +39,7 @@
                 <label for="destination">Montanhas</label>
             </div>
             <label for="sobre-voce">Porque voce deveria ganhar o concurso?<br>
-                <textarea name="sobre-voce" id="sobre-voce" cols="50" rows="4"></textarea> </label>
+                <textarea class="form-control"  name="sobre-voce" id="sobre-voce" cols="50" rows="4"></textarea> </label>
             <div class="container-date">
                 <label for="date">Data: </label>
                 <input type="date">
@@ -48,7 +50,7 @@
                 <label for="promocoes"><input type="checkbox" name="promocoes" id="promocoes"> Promocoes oferecidas pela
                     trybe </label>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn btn-success">Enviar</button>
     </div>
     </form>
 
