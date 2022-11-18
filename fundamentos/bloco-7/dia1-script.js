@@ -37,8 +37,7 @@ const listSkillsValuesWithFor = (student) => {
     skills.push(student[skill]);
   }
 
-  return skills;
-};
+  return skills;};
 
 const listSkillsValuesWithValues = (student) => {
   return Object.values(student);
