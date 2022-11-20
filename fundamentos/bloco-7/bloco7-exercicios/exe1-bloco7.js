@@ -34,7 +34,7 @@ try {
 }
 catch(erro){
     console.log(erro.message);
-}finally { //roda de qualquer forma 
+}finally { //roda de qualquer forma
     document.getElementById('value1').value = '';
     document.getElementById('value2').value = '';
 }

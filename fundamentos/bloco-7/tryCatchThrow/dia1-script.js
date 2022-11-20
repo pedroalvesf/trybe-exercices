@@ -41,7 +41,7 @@
 
 // const listSkillsValuesWithValues = (student) => {
 //   return Object.values(student);
-// }; 
+// };
 
 // // Sem Object.values
 // console.log(listSkillsValuesWithFor(student));
@@ -57,13 +57,13 @@ const withoutInput = (value1, value2) =>{
 }
 
 const isNumber = (valor1, valor2) => {
-  
+
 }
 function sum() {
     const value1 = document.getElementById('value1').value;
     const value2 = document.getElementById('value2').value;
     const result = Number(value1) + Number(value2);
-    
+
     document.getElementById('result').innerHTML = `Resultado: ${result}`;
     document.getElementById('value1').value = '';
     document.getElementById('value2').value = '';
