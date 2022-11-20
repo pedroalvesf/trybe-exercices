@@ -145,13 +145,13 @@ console.log("------------------------------");
 
 console.log(Object.entries(coolestTvShow));
 
-const coutries = {
+const countries = {
   franca: "Paris",
   brasil: "Brasília",
   espanha: "Madrid",
   portugal: "Lisboa",
 };
-const pairKeyValue = Object.entries(coutries);
+const pairKeyValue = Object.entries(countries);
 console.log(pairKeyValue);
 console.log("------------------------------");
 console.log("First form calling");
@@ -167,3 +167,87 @@ for (index in pairKeyValue) {
 }
 
 console.log("------------------------------");
+//always use keys to be able to use length, as it transforms the object into one array
+
+for(let index =0; index < Object.keys(countries).length ; index++){
+  console.log(`Pais: ${Object.keys(countries)[index]} | Cidade: ${Object.values(countries)[index]}`);
+}
+
+//fourth part  - object.assign  -> 
+console.log("------------------------------");
+console.log("------------------------------");
+// A função recebe um número qualquer de parâmetros. Todos são agregados como valores para adicionar ao objeto de destino.
+
+// Object.assign(destino, objeto1);
+// Object.assign(destino, objeto1, objeto2);
+// Object.assign(destino, objeto1, objeto2, objeto3, objeto4);
+
+const person = {
+  name: 'Alberto',
+  lastName: 'Gomes',
+  age: 20,
+};
+
+const info = {
+  age: 23,
+  job: 'engenheiro',
+};
+
+const family = {
+  children: ['Maria', 'João'],
+  wife: 'Ana',
+};
+
+Object.assign(person, info, family)
+console.log(person)
+
+/* Output
+  { name: 'Alberto',
+  lastName: 'Gomes',
+  age: 23,
+  job: 'engenheiro',
+  children: [ 'Maria', 'João' ],
+  wife: 'Ana'
+  } */
+
+  const personA = {
+    name: 'Roberto',
+  };
+  
+  const lastName = {
+    lastName: 'Couto',
+  };
+  
+  const clone = Object.assign(personA, lastName);
+  console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+  console.log(Object.assign(personA, lastName))
+ 
+  clone.name = 'Maria';
+
+console.log('Mudando a propriedade name através do objeto clone')
+console.log(clone); // Output: { name: 'Maria', lastName: 'Silva' }
+console.log(personA); // Output: { name: 'Maria', lastName: 'Silva' }
+console.log('--------------');
+
+personA.lastName = 'Ferreira';
+
+console.log('Mudando a propriedade lastName através do objeto person');
+console.log(clone); // Output: { name: 'Maria', lastName: 'Ferreira' }
+console.log(personA); // Output: { name: 'Maria', lastName: 'Ferreira' }
+
+//changes the name with the main or the "clone" variable, after that, the main one will keep every change made
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+const personB = {
+  name:'Roberto',
+};
+
+const lastNameB = {
+  lastName: 'Silva',
+};
+//using this form bellow, only the newPerson will be changed
+const newPerson = Object.assign({},personB,lastNameB);
+newPerson.name = 'Gilberto';
+console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+console.log(newPerson);
+console.log(personB);
+
