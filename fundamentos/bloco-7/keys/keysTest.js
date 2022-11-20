@@ -100,18 +100,22 @@ const listSkills = (student) => {
 };
 
 function showSkills(student) {
-  const arraySkills = Object.keys(student);
-  for (const index in arraySkills) {
-    `${arraySkills[index]}, Nivel: ${student[arraySkills[index]]}`;
+  const arraySkills2 = Object.keys(student);
+  for (const index in arraySkills2) {
+    `${arraySkills2[index]}, ${student[arraySkills2[index]]}`;
   }
 }
-console.log("------------------------------");
 showSkills(student1);
 console.log(student1);
-console.log("------------------------------");
+console.log("-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--");
+console.log("-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx--");
+
 listSkills(student1);
-console.log("------------------------------");
-console.log("------------------------------");
+console.log("-jjjjjjjjjjjjjjjjjjjjjjjjj--");
+
+
+console.log("-jjjjjjjjjjjjjjjjjjjjjjjjj--");
+console.log("-jjjjjjjjjjjjjjjjjjjjjjjjj--");
 
 //third part  - object.values -> to get the values, different use from the above
 const student = {
