@@ -111,6 +111,45 @@ console.log("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK")
 
 // Utilizando o objeto (allLesson), crie uma função para contar quantos estudantes assistiram às aulas de Matemática;
 
+console.log(allLessons)
+console.log(allLessons.lesson1.numeroEstudantes +
+            allLessons.lesson3.numeroEstudantes);
+
+
+const studantsReportinMath = (obj) => {
+    let total = 0;
+    const keys = Object.keys(obj);
+    for(index in keys){
+        if(obj[keys[index]].materia === "Matemática"){
+            total += obj[keys[index]].numeroEstudantes;
+        }
+    }
+    return total;
+}
+
+console.log(studantsReportinMath(allLessons))
 console.log("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK")
 
 // Utilizando o objeto (allLesson), crie uma função que deva retornar um objeto que represente o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes.
+
+const teachersClasses =(obj, name) => {
+    const allLessons = [];
+    let allStudents = 0;
+    const values = Object.values(obj);
+    for(index in values) {
+        if(values[index].professor === name){
+            allLessons.push(values[index].materia)
+            allStudents += values[index].numeroEstudantes;
+        }
+    }
+    return {aulas: allLessons, estudantes: allStudents};
+}
+
+const createReport =(allLessons, name) => {
+    const report = {};
+    report.professor = name;
+    Object.assign(report, teachersClasses(allLessons, name));
+    return report;
+}
+// console.log(teachersClasses(lesson2,'Carlos'));
+console.log(createReport(allLessons, 'Carlos'));
