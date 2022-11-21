@@ -1,0 +1,1 @@
+const myFizzBuzz = requite('./myFizzBuzz.js');
