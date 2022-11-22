@@ -1,4 +1,4 @@
-function hydrate = (string) => {
+const hydrate = (string) => {
     const stringSplitada = string.split('');
     let agua = 0;
 
