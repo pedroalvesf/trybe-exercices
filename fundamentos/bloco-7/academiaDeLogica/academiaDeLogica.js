@@ -121,3 +121,14 @@ const charsOfEachFamily = (chars) => {
 };
 
 console.log(charsOfEachFamily(gameOfThronesCharacters));
+
+
+function isZero(number) {
+	if (number === 0) {
+		return 'Zero';
+	}
+	return 'Not zero';
+}
+
+const zeroIs = (number) => (number === 0)? "Zero":"Not zero";
+
