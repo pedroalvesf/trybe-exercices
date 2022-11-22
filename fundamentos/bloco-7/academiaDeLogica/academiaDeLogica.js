@@ -71,64 +71,75 @@ const gameOfThronesCharacters = [
     },
   ];
 
-console.log("------------------------")
-function houseAndFullname(obj){
-    let stark = [];
-    let tarth = [];
-    let targaryen = [];
-    for(index of obj){
-        if(`${index.family}` === 'House Stark'){
-            stark.push(`${index.fullName}`);
-        }
-        if(`${index.family}` === 'House Targaryen'){
-            targaryen.push(`${index.fullName}`);
-        }
-        if(`${index.family}` === 'Tarth'){
-            tarth.push(`${index.fullName}`);
-        }
-    }
-    return {
-        'House Targaryen': targaryen,
-        'Tarth': tarth,
-	    'House Stark': stark
-    };
-};
+// console.log("------------------------")
+// function houseAndFullname(obj){
+//     let stark = [];
+//     let tarth = [];
+//     let targaryen = [];
+//     for(index of obj){
+//         if(`${index.family}` === 'House Stark'){
+//             stark.push(`${index.fullName}`);
+//         }
+//         if(`${index.family}` === 'House Targaryen'){
+//             targaryen.push(`${index.fullName}`);
+//         }
+//         if(`${index.family}` === 'Tarth'){
+//             tarth.push(`${index.fullName}`);
+//         }
+//     }
+//     return {
+//         'House Targaryen': targaryen,
+//         'Tarth': tarth,
+// 	    'House Stark': stark
+//     };
+// };
 // console.log(houseAndFullname(gameOfThronesCharacters));
+// console.log("------------------------")
+// function houseAndFullname(obj){
+//     const familys = {};
+//     for(index of obj){
+//         if(index[obj.family]){
+//             familys[obj.family].push(obj.fullName)
+//         }else{
+//             familys[obj.family] = [obj.fullName];
+//         }
+//     }
+//     console.log(familys);
+// }
+// houseAndFullname(gameOfThronesCharacters);
+// console.log("------------------------")
+// function houseAndFullname2(obj){
+//     const familyList = {}
+//     obj.forEach((obj) => {
+//         if(!familyList[obj.family]){
+//             familyList[obj.family] = [obj.fullName];
+//         }else{
+//             familyList[obj.family].push(obj.fullName);
+//         }
+//     });
+//     console.log(familyList)
+// }
+// houseAndFullname2(gameOfThronesCharacters);
+// const charsOfEachFamily = (chars) => {
+//     const lineage = {};
+//     for (let char of chars) {
+//     if (Object.keys(lineage).includes(char.family)) {
+//         lineage[char.family].push(char.fullName);
+//     } else {
+//         lineage[char.family] = [char.fullName];
+//     }
+//     }
+//     return lineage;
+// };
+// console.log(charsOfEachFamily(gameOfThronesCharacters));
 
-function houseAndFullname2(obj){
-    const familyList = {}
-    obj.forEach((obj) => {
-        if(!familyList[obj.family]){
-            familyList[obj.family] = [obj.fullName];
-        }else{
-            familyList[obj.family].push(obj.fullName);
-        }
-    });
-    console.log(familyList)
-}
-houseAndFullname2(gameOfThronesCharacters);
+// function isZero(number) {
+// 	if (number === 0) {
+// 		return 'Zero';
+// 	}
+// 	return 'Not zero';
+// }
 
-const charsOfEachFamily = (chars) => {
-    const lineage = {};
-    for (let char of chars) {
-    if (Object.keys(lineage).includes(char.family)) {
-        lineage[char.family].push(char.fullName);
-    } else {
-        lineage[char.family] = [char.fullName];
-    }
-    }
-    return lineage;
-};
+// const zeroIs = (number) => (number === 0)? "Zero":"Not zero";
 
-console.log(charsOfEachFamily(gameOfThronesCharacters));
-
-
-function isZero(number) {
-	if (number === 0) {
-		return 'Zero';
-	}
-	return 'Not zero';
-}
-
-const zeroIs = (number) => (number === 0)? "Zero":"Not zero";
-
+// console.log(zeroIs(1));
