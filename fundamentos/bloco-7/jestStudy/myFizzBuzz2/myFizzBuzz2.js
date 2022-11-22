@@ -7,5 +7,5 @@ function myFizzBuzz2(num) {
 }
 
   // implemente seus testes aqui
-
+console.log(myFizzBuzz2(15))
 module.exports = myFizzBuzz2;
