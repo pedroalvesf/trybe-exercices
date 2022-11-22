@@ -34,5 +34,5 @@ const decode = (string) => {
     return mapString(map, string);
 }
 
-module.exports = decode;
-module.exports = encode;
+module.exports = {encode, decode};
+
