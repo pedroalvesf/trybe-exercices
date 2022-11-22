@@ -1,4 +1,4 @@
-const { encode, decode } = require('./encodeDecode.js');
+const { encode, decode } = require('./map.js');
 describe('Testando as duas funcoes', () => {
     it('deve confirmar se `e uma funcao', () => {
         expect(decode).toBeDefined();
