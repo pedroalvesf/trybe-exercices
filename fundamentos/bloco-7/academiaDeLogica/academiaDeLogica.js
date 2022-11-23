@@ -94,18 +94,18 @@ const gameOfThronesCharacters = [
 //     };
 // };
 // console.log(houseAndFullname(gameOfThronesCharacters));
-// console.log("------------------------")
-// function houseAndFullname(obj){
-//     const familys = {};
-//     for(index of obj){
-//         if(index[obj.family]){
-//             familys[obj.family].push(obj.fullName)
-//         }else{
-//             familys[obj.family] = [obj.fullName];
-//         }
-//     }
-//     console.log(familys);
-// }
+console.log("------------------------")
+function houseAndFullname(obj){
+    const familys = {};
+    for(index of obj){
+        if(index[obj.family]){
+            familys[obj.family].push(obj.fullName)
+        }else{
+            familys[obj.family] = [obj.fullName];
+        }
+    }
+    console.log(familys);
+}
 // houseAndFullname(gameOfThronesCharacters);
 // console.log("------------------------")
 // function houseAndFullname2(obj){
@@ -133,13 +133,13 @@ const gameOfThronesCharacters = [
 // };
 // console.log(charsOfEachFamily(gameOfThronesCharacters));
 
-// function isZero(number) {
-// 	if (number === 0) {
-// 		return 'Zero';
-// 	}
-// 	return 'Not zero';
-// }
+function isZero(number) {
+	if (number === 0) {
+		return 'Zero';
+	}
+	return 'Not zero';
+}
 
-// const zeroIs = (number) => (number === 0)? "Zero":"Not zero";
+const zeroIs = (number) => (number === 0)? "Zero":"Not zero";
 
-// console.log(zeroIs(1));
+console.log(zeroIs(1));
