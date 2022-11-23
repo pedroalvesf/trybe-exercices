@@ -57,3 +57,5 @@ const searchEmployee = (id, detail) => {
     throw new Error("ID nao identificada")
 };
 console.log(searchEmployee("4678-2", "specialities"));
+
+module.exports = searchEmployee;
