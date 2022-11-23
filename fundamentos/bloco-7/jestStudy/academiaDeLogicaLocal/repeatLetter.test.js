@@ -1,4 +1,4 @@
-const repeatLetter = require('../src/repeatLetter.js');
+const repeatLetter = require('./src/repeatLetter.js');
 
 describe('Encontre quantas vezes a letra se repete em uma string', () => {
   it('Retorne 2 quando a letra `m` for passada na string `how many times does the character occur in this sentence?`', () => {

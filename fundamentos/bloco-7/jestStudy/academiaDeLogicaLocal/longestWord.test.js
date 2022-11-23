@@ -1,4 +1,4 @@
-const longestWord = require('../src/longestWord.js');
+const longestWord = require('./src/longestWord.js');
 
 describe('Encontre a maior palavra dentro de um array', () => {
   it('Retorne `candy` caso o array seja `["I", "need", "candy"]`', () => {

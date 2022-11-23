@@ -1,4 +1,4 @@
-const welcomeUser = require('../src/welcomeUser.js');
+const welcomeUser = require('./src/welcomeUser.js');
 
 describe('Retorne Boas-vindas a nova pessoa usuária', () => {
   it('Retorne `Boas-vindas, Gabriel!` caso `Gabriel` seja o nome passado como parâmetro', () => {

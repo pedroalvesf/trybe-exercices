@@ -1,4 +1,4 @@
-const isEven = require('../src/isEven.js');
+const isEven = require('./src/isEven.js');
 
 describe('Escreva uma função que dado um valor numérico, retorne se o valor é par', () => {
   it('Caso o valor do parâmetro seja 2, retorna a string "esse valor é par"', () => {

@@ -1,4 +1,4 @@
-const finalSpeed = require('../src/finalSpeed.js');
+const finalSpeed = require('./src/finalSpeed.js');
 
 describe('Retorna o cálculo da velocidade final de um objeto em queda livre', () => {
   it('Retorna `49` caso a função seja chamanda com o argumento 5', () => {
