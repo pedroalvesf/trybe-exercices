@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1669211857215" clover="3.2.0">
-  <project timestamp="1669211857215" name="All files">
-    <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1" elements="15" coveredelements="12" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+<coverage generated="1669215273851" clover="3.2.0">
+  <project timestamp="1669215273851" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
     <file name="professionalBoard.js" path="/home/pedroalves/Documents/github/fundamentos/trybe-exercices/fundamentos/bloco-7/exercicioDia2/exerciciosPratica/professionalBoard.js">
-      <metrics statements="10" coveredstatements="8" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="2" count="1" type="stmt"/>
       <line num="42" count="1" type="stmt"/>
-      <line num="49" count="3" type="stmt"/>
-      <line num="50" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="51" count="3" type="cond" truecount="1" falsecount="1"/>
-      <line num="52" count="0" type="stmt"/>
-      <line num="54" count="3" type="stmt"/>
-      <line num="57" count="0" type="stmt"/>
+      <line num="49" count="7" type="stmt"/>
+      <line num="50" count="37" type="cond" truecount="2" falsecount="0"/>
+      <line num="51" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="52" count="1" type="stmt"/>
+      <line num="54" count="5" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
       <line num="59" count="1" type="stmt"/>
       <line num="61" count="1" type="stmt"/>
     </file>
