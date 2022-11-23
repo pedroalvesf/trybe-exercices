@@ -17,6 +17,6 @@ describe('Confirma que existe personagem', () => {
         expect(printMessage(info)).toMatch(info.personagem);
     })
     it('Checa se entra no fluxo de erro', () => {
-        expect(printMessage('Pedro')).toThrow(g/'objeto inválido'/g);
+        expect(() => {printMessage('Pedro')}).toThrow(/objeto/);
     })
 })
