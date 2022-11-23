@@ -48,8 +48,12 @@ const searchEmployee = (id, detail) => {
     // })
     for(let index of professionalBoard){
         if(index.id === id){
+            if(!index[detail]){
+                throw new Error("Informacao indisponivel");
+            }
             return index[detail]
         }
     }
+    throw new Error("ID nao identificada")
 };
 console.log(searchEmployee("4678-2", "specialities"));
