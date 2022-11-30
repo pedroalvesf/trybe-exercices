@@ -213,20 +213,39 @@ const books = [
 // console.log(someBookWasReleaseOnThe80s());
 
 
-const authorBornIn1947 = () => {
-    return books.find(book => book.author.birthYear === 1947)
+// const authorBornIn1947 = () => {
+//     return books.find(book => book.author.birthYear === 1947)
+// };
+// console.log(authorBornIn1947());
+
+// const smallerName = () => {
+//     let nameBook = 'aaaaaaaaa';
+//     books.forEach(book => {
+//         if(!nameBook || book.name.length < nameBook.length){
+//             nameBook = book.name;
+//     };
+//     });
+//     return nameBook;
+// };
+// console.log(smallerName());
+
+// const getNamedBook = () => {
+//   return books.find(book => book.name.length === 26);
+// };
+// console.log(getNamedBook());
+
+// const everyoneWasBornOnSecXX = () => {
+//   return books.every(book => book.author.birthYear >= 1800 && book.author.birthYear <= 1900);
+// };
+// console.log(everyoneWasBornOnSecXX());
+
+// const someBookWasReleaseOnThe80s = () => {
+//   return books.find(book => book.releaseYear >= 1880 && book.releaseYear <= 1989);
+// };
+// console.log(someBookWasReleaseOnThe80s());
+
+const someBookWasReleaseOnThe80 = () => {
+  let books80 = [];
+  books.find(book => book.releaseYear >= 1880 && book.releaseYear <= 1989);
 };
-console.log(authorBornIn1947());
-
-const smallerName = () => {
-    let nameBook = 'aaaaaaaaa';
-    books.forEach(book => {
-        if(!nameBook || book.name.length < nameBook.length){
-            nameBook = book.name;
-    }
-
-    })
-    return nameBook;
-
-};
-console.log(smallerName());
+console.log(books80);
