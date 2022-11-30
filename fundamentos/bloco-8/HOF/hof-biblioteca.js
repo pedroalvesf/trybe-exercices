@@ -246,6 +246,8 @@ const books = [
 
 const someBookWasReleaseOnThe80 = () => {
   let books80 = [];
-  books.find(book => book.releaseYear >= 1880 && book.releaseYear <= 1989);
+  const achaBook = books.find(book => book.releaseYear >= 1980 && book.releaseYear <= 1989).name;
+  books80.push(achaBook);
+  return console.log(books80);
 };
-console.log(books80);
+someBookWasReleaseOnThe80();
