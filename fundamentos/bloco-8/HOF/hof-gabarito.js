@@ -24,21 +24,3 @@ function nota() {
     return resultado;
 }
 console.log(nota());
-// porque esta dando errado
-// const result = (resposta, gabarito) => {
-//     let result = 0;
-
-//     gabarito.forEach((element, index) => {
-
-//         if (reposta[index] === 'N.A'){
-//             result += 0;
-//         }else if (element === resposta[index]) {
-//             result += 1;
-//         }else {
-//             result -= 0.5;
-//         }
-//         return result;
-//     });
-// }
-
-// console.log(result(STUDENT_ANSWERS, RIGHT_ANSWERS));
