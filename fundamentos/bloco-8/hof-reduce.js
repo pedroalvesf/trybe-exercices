@@ -72,47 +72,42 @@ const getPopulation = (array) => {
         return acc + cur.population
     }, 0);
 };
-// console.log("Total population: " + getPopulation(countries));
+console.log("Total population: " + getPopulation(countries));
 
 const getTotalArea = (array) => {
     return array.reduce((acc, cur) => {
         return acc + cur.area
     }, 0)
 }
-// console.log("Total area: " + getTotalArea(countries));
+console.log("Total area: " + getTotalArea(countries));
 
 const longestName = (array) => {
     return array.reduce((acc, cur) => {
         return acc.name.length > cur.name.length ? acc : cur;
     });
 }
-// console.log(longestName(countries));
+console.log(longestName(countries));
 
 const names = [
     'Aanemarie', 'Adervandes', 'Akifusa',
     'Abegildo', 'Adicellia', 'Aladonata',
     'Abeladerco', 'Adieidy', 'Alarucha',
 ];
-
 const countA = () => {
     const as = names.join('').toLowerCase().split('');
     return as.reduce((acc, cur) => {
         return cur === 'a' ? acc += 1 : acc;
     },0);
 };
-// console.log(countA());
-
-// O index 0 do array `students` equivale ao index 0 do array `grades`
+console.log(countA());
 
 const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
 const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
-
 const expectedResult = [
 { name: 'Pedro Henrique', average: 7.8 },
 { name: 'Miguel', average: 9.2 },
 { name: 'Maria Clara', average: 8.8 },
 ];
-
 const studentAverage = () => {
     return nameAndAverage = students.map((student, index) => (
     {
