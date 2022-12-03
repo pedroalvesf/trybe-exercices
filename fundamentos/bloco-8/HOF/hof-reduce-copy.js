@@ -95,3 +95,14 @@ const countA = () => {
     return (names.join('').toLowerCase().split('')).reduce((acc, cur) => cur === 'a'? acc += 1: acc, 0);
 }
 console.log(countA());
+
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+const studentAverage = (students, grades) => {
+    return students.map((student, index) => ({
+        name: student,
+        average: grades[index].reduce((acc, cur) => acc + cur) / grades[index].length,
+    }
+))}
+console.log(studentAverage(students, grades));
