@@ -127,10 +127,18 @@ const estudantes = [
     },
 ];
 
-const bestClassByStudant = () => {
+// const bestClassByStudant = () => {
+//     return estudantes.map((studant) => ({
+//         name: studant.nome,
+//         materia: studant.materias.reduce((acc, materia) => (acc.nota > materia.nota) ? acc : materia),
+//         mediaGeral: studant.materias.reduce((acc, cur) => ((acc + cur.nota)),0)/4,
+//     }))}
+// console.log(bestClassByStudant(estudantes));
+const bestClassStudent = () => {
     return estudantes.map((studant) => ({
         name: studant.nome,
-        materia: studant.materias.reduce((acc, materia) => (acc.nota > materia.nota) ? acc : materia),
-        mediaGeral: studant.materias.reduce((acc, cur) => ((acc + cur.nota)),0)/4,
-    }))}
-console.log(bestClassByStudant(estudantes));
+        materia: studant.materias.reduce((acc, cur) => (acc.nota > cur.nota)? acc: cur, 0),
+        'media geral': studant.materias.reduce((acc, cur) => (acc + cur.nota), 0)/4
+    }))
+}
+console.log(bestClassStudent())

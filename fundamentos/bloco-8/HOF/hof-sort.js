@@ -24,7 +24,7 @@ const people = [
 
   // Adicione seu código aqui
 
-// people.sort((a, b) => a.age  > b.age ? 1 : -1);
-people.sort((a, b) => a.name  > b.name ? 1 : -1);
+people.sort((a, b) => a.age  > b.age ? 1 : -1);
+// people.sort((a, b) => a.name  > b.name ? 1 : -1);
 // people.sort((a, b) => a.name.length  > b.name.length ? 1 : -1);
 console.log(people);
