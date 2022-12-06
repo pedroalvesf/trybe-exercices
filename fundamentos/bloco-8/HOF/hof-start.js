@@ -92,10 +92,24 @@ const reportStatus = (name, students) => {
 }
 console.log(reportStatus('Ferreira', estudantes));
 
-const average = () => {
-    return estudantes.map((estu) => ({
-        name: estu.nome,
-        'media geral': estu.materias.reduce((acc, cur) => (acc + cur.nota), 0)/4
-    }))
-}
-console.log(average());
+// const average = () => {
+//     return estudantes.map((estu) => ({
+//         name: estu.nome,
+//         'media geral': estu.materias.reduce((acc, cur) => (acc + cur.nota), 0)/4
+//     }))
+// }
+// console.log(average());
+const reportBest = (students) => students.map((student) => ({
+  name: student.nome,
+  materia: student.materias.reduce((acc, materia) => (acc.nota > materia.nota) ? acc : materia).name,
+  'Media Geral': student.materias.reduce((acc, cur) => {
+    return acc + parseInt(cur.nota)},0)/4
+}));
+
+console.log(reportBest(estudantes));
+
+const media = estudantes.filter((estudante) => estudante.nome === 'Wilson');
+const somaTotal = media[0].materias.reduce((acc, cur) => {
+  return acc + parseInt(cur.nota);
+}, 0)/4;
+console.log(somaTotal);
