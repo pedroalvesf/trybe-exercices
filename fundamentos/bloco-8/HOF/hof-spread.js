@@ -33,6 +33,18 @@ console.log(Math.max(...randomNumbers)); // 800
 const sum = (...args) => args.reduce((accumulator, current) => accumulator + current, 0);
 console.log(sum(4, 7, 8, 9, 60)); // 88
 
+const product2 = {
+    name: 'Smart TV Crystal UHD',
+    price: '1899.05',
+    seller: 'Casas de Minas',
+};
+
+const printProductDetails = ({ name, price, seller }) => {
+    console.log(`Promoção! ${name} por apenas ${price} é só aqui: ${seller}`);
+};
+printProductDetails(product2); // Promoção! Smart TV Crystal UHD por apenas 1899.05 é só aqui: Casas de Minas
+
+
 // Faça uma lista com as suas frutas favoritas
 const specialFruit = ['morango', 'banana', 'manga'];
 

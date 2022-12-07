@@ -6,7 +6,7 @@ const arrays = [
 
 const juntaTudo = () => {
     return arrays.reduce((acc, cur) => {
-        return acc.concat(cur);
+        return acc = [...acc, ...cur];
     })
 };
 // console.log(juntaTudo())
@@ -81,11 +81,18 @@ const reduceNames = () => {
 };
 console.log(reduceNames())
 
+const reducedNames = (array) => {
+    return array.reduce((acc, {author: {name}}) => {
+        return acc = [...acc, name]
+    }, []).join(', ')
+}
+console.log(reducedNames(books))
 const averageAge = () => {
     return books.reduce((acc, cur) => {
         return acc + cur.releaseYear - cur.author.birthYear
     },'')/books.length
 };
+
 // console.log(averageAge());
 
 const longestNamedBook = () => {
