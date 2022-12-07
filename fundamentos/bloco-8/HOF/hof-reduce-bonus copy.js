@@ -79,7 +79,7 @@ const reduceNames = () => {
     return `${acc}${cur.author.name}, `
     }, '')
 };
-// console.log(reduceNames())
+console.log(reduceNames())
 
 const averageAge = () => {
     return books.reduce((acc, cur) => {
@@ -93,4 +93,12 @@ const longestNamedBook = () => {
         return acc.name.length > cur.name.length ? acc:cur
     })
 }
-console.log(longestNamedBook());
+// console.log(longestNamedBook());
+
+const smallestNamedBook = () => {
+    return books.reduce((acc, cur) => {
+        return acc.name.length < cur.name.length ? acc:cur
+    })
+}
+
+console.log(smallestNamedBook())
